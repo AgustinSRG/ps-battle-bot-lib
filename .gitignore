@@ -1,0 +1,22 @@
+# .gitignore file
+
+# Env
+
+.env
+
+# Compilation Results
+
+dist
+docs
+
+# Ignore downloaded dependencies
+
+node_modules
+
+# Ignore temp files
+
+temp
+
+npm-debug.log
+core
+TODO.txt

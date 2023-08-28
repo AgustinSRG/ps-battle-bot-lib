@@ -1,0 +1,1864 @@
+[
+	[
+		"aerodactyl",
+		{
+			"item": "leftovers",
+			"moves": [
+				"earthquake",
+				"hiddenpowerrock",
+				"wingattack",
+				"fireblast"
+			]
+		}
+	],
+	[
+		"aipom",
+		{
+			"item": "leftovers",
+			"moves": [
+				"agility",
+				"batonpass",
+				"return",
+				"counter"
+			]
+		}
+	],
+	[
+		"alakazam",
+		{
+			"item": "leftovers",
+			"moves": [
+				"psychic",
+				"dynamicpunch",
+				"recover",
+				"firepunch"
+			]
+		}
+	],
+	[
+		"ampharos",
+		{
+			"item": "leftovers",
+			"moves": [
+				"thunder",
+				"lightscreen",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"arbok",
+		{
+			"item": "leftovers",
+			"moves": [
+				"sludgebomb",
+				"glare",
+				"earthquake",
+				"gigadrain"
+			]
+		}
+	],
+	[
+		"arcanine",
+		{
+			"item": "leftovers",
+			"moves": [
+				"fireblast",
+				"hiddenpowerfighting",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"ariados",
+		{
+			"item": "leftovers",
+			"moves": [
+				"spiderweb",
+				"protect",
+				"disable",
+				"batonpass"
+			]
+		}
+	],
+	[
+		"articuno",
+		{
+			"item": "leftovers",
+			"moves": [
+				"rest",
+				"sleeptalk",
+				"icebeam",
+				"toxic"
+			]
+		}
+	],
+	[
+		"azumarill",
+		{
+			"item": "leftovers",
+			"moves": [
+				"surf",
+				"lightscreen",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"beedrill",
+		{
+			"item": "leftovers",
+			"moves": [
+				"sludgebomb",
+				"hiddenpowerground",
+				"swordsdance",
+				"agility"
+			]
+		}
+	],
+	[
+		"bellossom",
+		{
+			"item": "leftovers",
+			"moves": [
+				"stunspore",
+				"hiddenpowergrass",
+				"leechseed",
+				"moonlight"
+			]
+		}
+	],
+	[
+		"blastoise",
+		{
+			"item": "leftovers",
+			"moves": [
+				"surf",
+				"rest",
+				"reflect",
+				"rapidspin"
+			]
+		}
+	],
+	[
+		"blissey",
+		{
+			"item": "leftovers",
+			"moves": [
+				"healbell",
+				"flamethrower",
+				"toxic",
+				"softboiled"
+			]
+		}
+	],
+	[
+		"butterfree",
+		{
+			"item": "leftovers",
+			"moves": [
+				"sleeppowder",
+				"stunspore",
+				"psychic",
+				"gigadrain"
+			]
+		}
+	],
+	[
+		"celebi",
+		{
+			"item": "leftovers",
+			"moves": [
+				"healbell",
+				"recover",
+				"leechseed",
+				"psychic"
+			]
+		}
+	],
+	[
+		"chansey",
+		{
+			"item": "leftovers",
+			"moves": [
+				"present",
+				"thunder",
+				"healbell",
+				"softboiled"
+			]
+		}
+	],
+	[
+		"charizard",
+		{
+			"item": "leftovers",
+			"moves": [
+				"bellydrum",
+				"earthquake",
+				"rockslide",
+				"fireblast"
+			]
+		}
+	],
+	[
+		"chinchou",
+		{
+			"item": "leftovers",
+			"moves": [
+				"surf",
+				"thunder",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"clefable",
+		{
+			"item": "leftovers",
+			"moves": [
+				"bellydrum",
+				"moonlight",
+				"return",
+				"fireblast"
+			]
+		}
+	],
+	[
+		"clefairy",
+		{
+			"item": "leftovers",
+			"moves": [
+				"thunderwave",
+				"encore",
+				"moonlight",
+				"seismictoss"
+			]
+		}
+	],
+	[
+		"cloyster",
+		{
+			"item": "leftovers",
+			"moves": [
+				"spikes",
+				"surf",
+				"toxic",
+				"explosion"
+			]
+		}
+	],
+	[
+		"corsola",
+		{
+			"item": "leftovers",
+			"moves": [
+				"mirrorcoat",
+				"curse",
+				"ancientpower",
+				"recover"
+			]
+		}
+	],
+	[
+		"crobat",
+		{
+			"moves": [
+				"haze",
+				"wingattack",
+				"thief",
+				"confuseray"
+			]
+		}
+	],
+	[
+		"delibird",
+		{
+			"item": "leftovers",
+			"moves": [
+				"spikes",
+				"icebeam",
+				"toxic",
+				"hiddenpowerflying"
+			]
+		}
+	],
+	[
+		"dewgong",
+		{
+			"item": "leftovers",
+			"moves": [
+				"surf",
+				"icebeam",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"ditto",
+		{
+			"item": "metalpowder",
+			"moves": [
+				"transform"
+			]
+		}
+	],
+	[
+		"dodrio",
+		{
+			"item": "leftovers",
+			"moves": [
+				"doubleedge",
+				"drillpeck",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"donphan",
+		{
+			"item": "leftovers",
+			"moves": [
+				"earthquake",
+				"hiddenpowerrock",
+				"curse",
+				"rest"
+			]
+		}
+	],
+	[
+		"dragonair",
+		{
+			"item": "leftovers",
+			"moves": [
+				"thunderwave",
+				"surf",
+				"fireblast",
+				"thunder"
+			]
+		}
+	],
+	[
+		"dragonite",
+		{
+			"item": "leftovers",
+			"moves": [
+				"thunderwave",
+				"icebeam",
+				"thunder",
+				"dynamicpunch"
+			]
+		}
+	],
+	[
+		"dugtrio",
+		{
+			"item": "leftovers",
+			"moves": [
+				"earthquake",
+				"rockslide",
+				"sludgebomb",
+				"substitute"
+			]
+		}
+	],
+	[
+		"dunsparce",
+		{
+			"item": "leftovers",
+			"moves": [
+				"glare",
+				"curse",
+				"return",
+				"rest"
+			]
+		}
+	],
+	[
+		"electabuzz",
+		{
+			"item": "leftovers",
+			"moves": [
+				"thunderbolt",
+				"icepunch",
+				"crosschop",
+				"firepunch"
+			]
+		}
+	],
+	[
+		"electrode",
+		{
+			"item": "leftovers",
+			"moves": [
+				"thunderwave",
+				"thunderbolt",
+				"explosion",
+				"hiddenpowergrass"
+			]
+		}
+	],
+	[
+		"entei",
+		{
+			"item": "leftovers",
+			"moves": [
+				"sunnyday",
+				"fireblast",
+				"solarbeam",
+				"hiddenpowerfighting"
+			]
+		}
+	],
+	[
+		"espeon",
+		{
+			"item": "leftovers",
+			"moves": [
+				"growth",
+				"psychic",
+				"hiddenpowerwater",
+				"morningsun"
+			]
+		}
+	],
+	[
+		"exeggutor",
+		{
+			"item": "leftovers",
+			"moves": [
+				"sleeppowder",
+				"psychic",
+				"gigadrain",
+				"explosion"
+			]
+		}
+	],
+	[
+		"farfetchd",
+		{
+			"item": "leftovers",
+			"moves": [
+				"agility",
+				"swordsdance",
+				"return",
+				"batonpass"
+			]
+		}
+	],
+	[
+		"fearow",
+		{
+			"item": "leftovers",
+			"moves": [
+				"doubleedge",
+				"drillpeck",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"feraligatr",
+		{
+			"item": "leftovers",
+			"moves": [
+				"hydropump",
+				"earthquake",
+				"rockslide",
+				"curse"
+			]
+		}
+	],
+	[
+		"flareon",
+		{
+			"item": "leftovers",
+			"moves": [
+				"fireblast",
+				"shadowball",
+				"return",
+				"hiddenpowerrock"
+			]
+		}
+	],
+	[
+		"forretress",
+		{
+			"item": "leftovers",
+			"moves": [
+				"spikes",
+				"rapidspin",
+				"toxic",
+				"hiddenpowerfire"
+			]
+		}
+	],
+	[
+		"furret",
+		{
+			"item": "leftovers",
+			"moves": [
+				"doubleedge",
+				"rest",
+				"curse",
+				"shadowball"
+			]
+		}
+	],
+	[
+		"gastly",
+		{
+			"moves": [
+				"psychic",
+				"explosion",
+				"thunder",
+				"thief"
+			]
+		}
+	],
+	[
+		"gengar",
+		{
+			"item": "leftovers",
+			"moves": [
+				"thunderbolt",
+				"icepunch",
+				"hypnosis",
+				"explosion"
+			]
+		}
+	],
+	[
+		"girafarig",
+		{
+			"item": "leftovers",
+			"moves": [
+				"batonpass",
+				"amnesia",
+				"thunder",
+				"psychic"
+			]
+		}
+	],
+	[
+		"gligar",
+		{
+			"item": "leftovers",
+			"moves": [
+				"screech",
+				"earthquake",
+				"wingattack",
+				"counter"
+			]
+		}
+	],
+	[
+		"gloom",
+		{
+			"item": "leftovers",
+			"moves": [
+				"stunspore",
+				"curse",
+				"sludgebomb",
+				"moonlight"
+			]
+		}
+	],
+	[
+		"golduck",
+		{
+			"item": "leftovers",
+			"moves": [
+				"crosschop",
+				"hypnosis",
+				"surf",
+				"icebeam"
+			]
+		}
+	],
+	[
+		"golem",
+		{
+			"item": "leftovers",
+			"moves": [
+				"earthquake",
+				"rapidspin",
+				"explosion",
+				"roar"
+			]
+		}
+	],
+	[
+		"granbull",
+		{
+			"item": "leftovers",
+			"moves": [
+				"curse",
+				"frustration",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"graveler",
+		{
+			"item": "leftovers",
+			"moves": [
+				"earthquake",
+				"hiddenpowerrock",
+				"rapidspin",
+				"explosion"
+			]
+		}
+	],
+	[
+		"gyarados",
+		{
+			"item": "leftovers",
+			"moves": [
+				"hydropump",
+				"thunder",
+				"doubleedge",
+				"hiddenpowerground"
+			]
+		}
+	],
+	[
+		"haunter",
+		{
+			"item": "leftovers",
+			"moves": [
+				"hypnosis",
+				"psychic",
+				"thunder",
+				"explosion"
+			]
+		}
+	],
+	[
+		"heracross",
+		{
+			"item": "leftovers",
+			"moves": [
+				"rest",
+				"sleeptalk",
+				"megahorn",
+				"curse"
+			]
+		}
+	],
+	[
+		"hitmonchan",
+		{
+			"item": "leftovers",
+			"moves": [
+				"highjumpkick",
+				"return",
+				"counter",
+				"hiddenpowerghost"
+			]
+		}
+	],
+	[
+		"hitmonlee",
+		{
+			"item": "leftovers",
+			"moves": [
+				"highjumpkick",
+				"bodyslam",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"hitmontop",
+		{
+			"item": "leftovers",
+			"moves": [
+				"highjumpkick",
+				"curse",
+				"counter",
+				"hiddenpowerghost"
+			]
+		}
+	],
+	[
+		"hooh",
+		{
+			"item": "leftovers",
+			"moves": [
+				"recover",
+				"thunderbolt",
+				"sacredfire",
+				"earthquake"
+			]
+		}
+	],
+	[
+		"houndoom",
+		{
+			"item": "leftovers",
+			"moves": [
+				"fireblast",
+				"crunch",
+				"pursuit",
+				"roar"
+			]
+		}
+	],
+	[
+		"houndour",
+		{
+			"item": "leftovers",
+			"moves": [
+				"fireblast",
+				"crunch",
+				"pursuit",
+				"counter"
+			]
+		}
+	],
+	[
+		"hypno",
+		{
+			"item": "leftovers",
+			"moves": [
+				"thunderwave",
+				"psychic",
+				"lightscreen",
+				"rest"
+			]
+		}
+	],
+	[
+		"jolteon",
+		{
+			"item": "leftovers",
+			"moves": [
+				"batonpass",
+				"agility",
+				"hiddenpowerwater",
+				"thunder"
+			]
+		}
+	],
+	[
+		"jumpluff",
+		{
+			"item": "leftovers",
+			"moves": [
+				"sleeppowder",
+				"stunspore",
+				"leechseed",
+				"encore"
+			]
+		}
+	],
+	[
+		"jynx",
+		{
+			"item": "leftovers",
+			"moves": [
+				"lovelykiss",
+				"icebeam",
+				"psychic",
+				"substitute"
+			]
+		}
+	],
+	[
+		"kabutops",
+		{
+			"item": "leftovers",
+			"moves": [
+				"swordsdance",
+				"ancientpower",
+				"hiddenpowerground",
+				"hydropump"
+			]
+		}
+	],
+	[
+		"kadabra",
+		{
+			"item": "leftovers",
+			"moves": [
+				"psychic",
+				"thunderpunch",
+				"recover",
+				"encore"
+			]
+		}
+	],
+	[
+		"kangaskhan",
+		{
+			"item": "leftovers",
+			"moves": [
+				"curse",
+				"rest",
+				"return",
+				"roar"
+			]
+		}
+	],
+	[
+		"kingdra",
+		{
+			"item": "leftovers",
+			"moves": [
+				"surf",
+				"dragonbreath",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"kingler",
+		{
+			"item": "leftovers",
+			"moves": [
+				"frustration",
+				"swordsdance",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"lanturn",
+		{
+			"item": "leftovers",
+			"moves": [
+				"surf",
+				"thunderbolt",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"lapras",
+		{
+			"item": "leftovers",
+			"moves": [
+				"icebeam",
+				"thunderbolt",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"ledian",
+		{
+			"item": "leftovers",
+			"moves": [
+				"batonpass",
+				"agility",
+				"lightscreen",
+				"reflect"
+			]
+		}
+	],
+	[
+		"lickitung",
+		{
+			"item": "leftovers",
+			"moves": [
+				"bodyslam",
+				"swordsdance",
+				"sleeptalk",
+				"rest"
+			]
+		}
+	],
+	[
+		"lugia",
+		{
+			"item": "leftovers",
+			"moves": [
+				"curse",
+				"aeroblast",
+				"earthquake",
+				"recover"
+			]
+		}
+	],
+	[
+		"machamp",
+		{
+			"item": "leftovers",
+			"moves": [
+				"crosschop",
+				"curse",
+				"rockslide",
+				"hiddenpowerbug"
+			]
+		}
+	],
+	[
+		"magcargo",
+		{
+			"item": "leftovers",
+			"moves": [
+				"curse",
+				"rockslide",
+				"earthquake",
+				"fireblast"
+			]
+		}
+	],
+	[
+		"magmar",
+		{
+			"item": "leftovers",
+			"moves": [
+				"fireblast",
+				"psychic",
+				"thunderpunch",
+				"crosschop"
+			]
+		}
+	],
+	[
+		"magnemite",
+		{
+			"item": "leftovers",
+			"moves": [
+				"hiddenpowerice",
+				"rest",
+				"thunderbolt",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"magneton",
+		{
+			"item": "leftovers",
+			"moves": [
+				"thunderbolt",
+				"thunderwave",
+				"hiddenpowerwater",
+				"substitute"
+			]
+		}
+	],
+	[
+		"mantine",
+		{
+			"item": "leftovers",
+			"moves": [
+				"hydropump",
+				"confuseray",
+				"toxic",
+				"haze"
+			]
+		}
+	],
+	[
+		"marowak",
+		{
+			"item": "thickclub",
+			"moves": [
+				"earthquake",
+				"rockslide",
+				"hiddenpowerbug",
+				"swordsdance"
+			],
+			"ivs": {
+				"atk": 26,
+				"def": 26
+			}
+		}
+	],
+	[
+		"meganium",
+		{
+			"item": "leftovers",
+			"moves": [
+				"razorleaf",
+				"reflect",
+				"leechseed",
+				"synthesis"
+			]
+		}
+	],
+	[
+		"mew",
+		{
+			"item": "leftovers",
+			"moves": [
+				"swordsdance",
+				"submission",
+				"softboiled",
+				"shadowball"
+			]
+		}
+	],
+	[
+		"mewtwo",
+		{
+			"item": "leftovers",
+			"moves": [
+				"flamethrower",
+				"toxic",
+				"barrier",
+				"recover"
+			]
+		}
+	],
+	[
+		"miltank",
+		{
+			"item": "leftovers",
+			"moves": [
+				"healbell",
+				"milkdrink",
+				"growl",
+				"bodyslam"
+			]
+		}
+	],
+	[
+		"misdreavus",
+		{
+			"moves": [
+				"thunder",
+				"toxic",
+				"thief",
+				"painsplit"
+			]
+		}
+	],
+	[
+		"moltres",
+		{
+			"item": "charcoal",
+			"moves": [
+				"rest",
+				"sleeptalk",
+				"fireblast",
+				"sunnyday"
+			]
+		}
+	],
+	[
+		"mrmime",
+		{
+			"item": "leftovers",
+			"moves": [
+				"psychic",
+				"thunder",
+				"thunderwave",
+				"encore"
+			]
+		}
+	],
+	[
+		"muk",
+		{
+			"item": "leftovers",
+			"moves": [
+				"sludgebomb",
+				"fireblast",
+				"explosion",
+				"curse"
+			]
+		}
+	],
+	[
+		"murkrow",
+		{
+			"item": "leftovers",
+			"moves": [
+				"drillpeck",
+				"feintattack",
+				"pursuit",
+				"nightshade"
+			]
+		}
+	],
+	[
+		"nidoking",
+		{
+			"item": "leftovers",
+			"moves": [
+				"earthquake",
+				"lovelykiss",
+				"icebeam",
+				"thunder"
+			]
+		}
+	],
+	[
+		"nidoqueen",
+		{
+			"item": "leftovers",
+			"moves": [
+				"earthquake",
+				"lovelykiss",
+				"thunder",
+				"icebeam"
+			]
+		}
+	],
+	[
+		"ninetales",
+		{
+			"item": "leftovers",
+			"moves": [
+				"flamethrower",
+				"toxic",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"noctowl",
+		{
+			"item": "leftovers",
+			"moves": [
+				"hypnosis",
+				"reflect",
+				"nightshade",
+				"rest"
+			]
+		}
+	],
+	[
+		"octillery",
+		{
+			"item": "leftovers",
+			"moves": [
+				"surf",
+				"hiddenpowerelectric",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"omastar",
+		{
+			"item": "leftovers",
+			"moves": [
+				"surf",
+				"rest",
+				"haze",
+				"reflect"
+			]
+		}
+	],
+	[
+		"parasect",
+		{
+			"item": "leftovers",
+			"moves": [
+				"spore",
+				"hiddenpowerbug",
+				"gigadrain",
+				"stunspore"
+			]
+		}
+	],
+	[
+		"persian",
+		{
+			"item": "leftovers",
+			"moves": [
+				"return",
+				"hypnosis",
+				"screech",
+				"zapcannon"
+			]
+		}
+	],
+	[
+		"pidgeot",
+		{
+			"item": "leftovers",
+			"moves": [
+				"return",
+				"hiddenpowerflying",
+				"toxic",
+				"steelwing"
+			]
+		}
+	],
+	[
+		"pikachu",
+		{
+			"item": "lightball",
+			"moves": [
+				"thunderbolt",
+				"surf",
+				"sing",
+				"hiddenpowerfire"
+			]
+		}
+	],
+	[
+		"piloswine",
+		{
+			"item": "leftovers",
+			"moves": [
+				"earthquake",
+				"blizzard",
+				"curse",
+				"roar"
+			]
+		}
+	],
+	[
+		"pineco",
+		{
+			"item": "leftovers",
+			"moves": [
+				"spikes",
+				"explosion",
+				"rapidspin",
+				"toxic"
+			]
+		}
+	],
+	[
+		"pinsir",
+		{
+			"item": "leftovers",
+			"moves": [
+				"swordsdance",
+				"hiddenpowerbug",
+				"doubleedge",
+				"submission"
+			]
+		}
+	],
+	[
+		"politoed",
+		{
+			"item": "leftovers",
+			"moves": [
+				"bellydrum",
+				"surf",
+				"lovelykiss",
+				"bodyslam"
+			]
+		}
+	],
+	[
+		"poliwhirl",
+		{
+			"item": "miracleberry",
+			"moves": [
+				"bellydrum",
+				"return",
+				"earthquake",
+				"lovelykiss"
+			]
+		}
+	],
+	[
+		"poliwrath",
+		{
+			"item": "leftovers",
+			"moves": [
+				"bellydrum",
+				"lovelykiss",
+				"hydropump",
+				"bodyslam"
+			]
+		}
+	],
+	[
+		"porygon",
+		{
+			"item": "leftovers",
+			"moves": [
+				"doubleedge",
+				"thunderwave",
+				"recover",
+				"curse"
+			]
+		}
+	],
+	[
+		"porygon2",
+		{
+			"item": "leftovers",
+			"moves": [
+				"thunderwave",
+				"doubleedge",
+				"icebeam",
+				"recover"
+			]
+		}
+	],
+	[
+		"primeape",
+		{
+			"item": "leftovers",
+			"moves": [
+				"crosschop",
+				"rockslide",
+				"hiddenpowerbug",
+				"meditate"
+			]
+		}
+	],
+	[
+		"pupitar",
+		{
+			"item": "leftovers",
+			"moves": [
+				"ancientpower",
+				"earthquake",
+				"screech",
+				"rockslide"
+			]
+		}
+	],
+	[
+		"quagsire",
+		{
+			"item": "leftovers",
+			"moves": [
+				"earthquake",
+				"hiddenpowerrock",
+				"bellydrum",
+				"rest"
+			]
+		}
+	],
+	[
+		"qwilfish",
+		{
+			"item": "leftovers",
+			"moves": [
+				"curse",
+				"sludgebomb",
+				"hydropump",
+				"spikes"
+			]
+		}
+	],
+	[
+		"raichu",
+		{
+			"item": "leftovers",
+			"moves": [
+				"thunder",
+				"surf",
+				"raindance",
+				"substitute"
+			]
+		}
+	],
+	[
+		"raikou",
+		{
+			"item": "leftovers",
+			"moves": [
+				"thunder",
+				"roar",
+				"hiddenpowerwater",
+				"rest"
+			],
+			"evs": {
+				"hp": 252,
+				"atk": 252,
+				"def": 252,
+				"spa": 252,
+				"spd": 252,
+				"spe": 216
+			}
+		}
+	],
+	[
+		"rapidash",
+		{
+			"item": "leftovers",
+			"moves": [
+				"fireblast",
+				"doubleedge",
+				"hypnosis",
+				"substitute"
+			]
+		}
+	],
+	[
+		"raticate",
+		{
+			"item": "leftovers",
+			"moves": [
+				"superfang",
+				"substitute",
+				"mimic",
+				"bodyslam"
+			]
+		}
+	],
+	[
+		"rhydon",
+		{
+			"item": "leftovers",
+			"moves": [
+				"earthquake",
+				"rockslide",
+				"curse",
+				"roar"
+			]
+		}
+	],
+	[
+		"sandslash",
+		{
+			"item": "leftovers",
+			"moves": [
+				"swordsdance",
+				"earthquake",
+				"rockslide",
+				"substitute"
+			]
+		}
+	],
+	[
+		"scizor",
+		{
+			"item": "leftovers",
+			"moves": [
+				"swordsdance",
+				"batonpass",
+				"agility",
+				"hiddenpowerbug"
+			]
+		}
+	],
+	[
+		"scyther",
+		{
+			"item": "leftovers",
+			"moves": [
+				"swordsdance",
+				"wingattack",
+				"hiddenpowerground",
+				"batonpass"
+			]
+		}
+	],
+	[
+		"seaking",
+		{
+			"item": "miracleberry",
+			"moves": [
+				"swordsdance",
+				"agility",
+				"doubleedge",
+				"hiddenpowerground"
+			]
+		}
+	],
+	[
+		"shuckle",
+		{
+			"item": "leftovers",
+			"moves": [
+				"defensecurl",
+				"toxic",
+				"flash",
+				"rest"
+			]
+		}
+	],
+	[
+		"skarmory",
+		{
+			"item": "leftovers",
+			"moves": [
+				"whirlwind",
+				"drillpeck",
+				"rest",
+				"curse"
+			]
+		}
+	],
+	[
+		"slowbro",
+		{
+			"item": "leftovers",
+			"moves": [
+				"psychic",
+				"surf",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"slowking",
+		{
+			"item": "leftovers",
+			"moves": [
+				"surf",
+				"thunderwave",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"smeargle",
+		{
+			"item": "miracleberry",
+			"moves": [
+				"spore",
+				"agility",
+				"batonpass",
+				"substitute"
+			]
+		}
+	],
+	[
+		"sneasel",
+		{
+			"item": "leftovers",
+			"moves": [
+				"return",
+				"moonlight",
+				"toxic",
+				"dynamicpunch"
+			]
+		}
+	],
+	[
+		"snorlax",
+		{
+			"item": "leftovers",
+			"moves": [
+				"curse",
+				"doubleedge",
+				"earthquake",
+				"rest"
+			]
+		}
+	],
+	[
+		"stantler",
+		{
+			"moves": [
+				"return",
+				"earthquake",
+				"hypnosis",
+				"thief"
+			]
+		}
+	],
+	[
+		"starmie",
+		{
+			"item": "leftovers",
+			"moves": [
+				"surf",
+				"psychic",
+				"rapidspin",
+				"recover"
+			]
+		}
+	],
+	[
+		"steelix",
+		{
+			"item": "leftovers",
+			"moves": [
+				"earthquake",
+				"curse",
+				"roar",
+				"explosion"
+			]
+		}
+	],
+	[
+		"sudowoodo",
+		{
+			"item": "leftovers",
+			"moves": [
+				"curse",
+				"rockslide",
+				"earthquake",
+				"selfdestruct"
+			]
+		}
+	],
+	[
+		"suicune",
+		{
+			"item": "leftovers",
+			"moves": [
+				"surf",
+				"toxic",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"sunflora",
+		{
+			"item": "leftovers",
+			"moves": [
+				"growth",
+				"razorleaf",
+				"hiddenpowerwater",
+				"synthesis"
+			]
+		}
+	],
+	[
+		"tangela",
+		{
+			"item": "leftovers",
+			"moves": [
+				"stunspore",
+				"sleeppowder",
+				"gigadrain",
+				"reflect"
+			]
+		}
+	],
+	[
+		"tauros",
+		{
+			"item": "leftovers",
+			"moves": [
+				"doubleedge",
+				"earthquake",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"tentacruel",
+		{
+			"item": "leftovers",
+			"moves": [
+				"swordsdance",
+				"substitute",
+				"sludgebomb",
+				"hydropump"
+			]
+		}
+	],
+	[
+		"togetic",
+		{
+			"item": "leftovers",
+			"moves": [
+				"charm",
+				"fireblast",
+				"safeguard",
+				"psychic"
+			]
+		}
+	],
+	[
+		"typhlosion",
+		{
+			"item": "leftovers",
+			"moves": [
+				"fireblast",
+				"dynamicpunch",
+				"hiddenpowergrass",
+				"earthquake"
+			]
+		}
+	],
+	[
+		"tyranitar",
+		{
+			"item": "leftovers",
+			"moves": [
+				"rockslide",
+				"pursuit",
+				"roar",
+				"fireblast"
+			]
+		}
+	],
+	[
+		"umbreon",
+		{
+			"item": "leftovers",
+			"moves": [
+				"charm",
+				"pursuit",
+				"sleeptalk",
+				"rest"
+			]
+		}
+	],
+	[
+		"unown",
+		{
+			"item": "twistedspoon",
+			"moves": [
+				"hiddenpowerpsychic"
+			]
+		}
+	],
+	[
+		"ursaring",
+		{
+			"item": "leftovers",
+			"moves": [
+				"curse",
+				"return",
+				"earthquake",
+				"roar"
+			]
+		}
+	],
+	[
+		"vaporeon",
+		{
+			"item": "leftovers",
+			"moves": [
+				"surf",
+				"growth",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"venomoth",
+		{
+			"item": "leftovers",
+			"moves": [
+				"curse",
+				"sludgebomb",
+				"stunspore",
+				"hiddenpowerbug"
+			]
+		}
+	],
+	[
+		"venusaur",
+		{
+			"item": "leftovers",
+			"moves": [
+				"synthesis",
+				"leechseed",
+				"razorleaf",
+				"sleeppowder"
+			]
+		}
+	],
+	[
+		"victreebel",
+		{
+			"item": "leftovers",
+			"moves": [
+				"sleeppowder",
+				"swordsdance",
+				"sludgebomb",
+				"gigadrain"
+			]
+		}
+	],
+	[
+		"vileplume",
+		{
+			"item": "leftovers",
+			"moves": [
+				"sleeppowder",
+				"leechseed",
+				"sludgebomb",
+				"moonlight"
+			]
+		}
+	],
+	[
+		"weezing",
+		{
+			"item": "leftovers",
+			"moves": [
+				"sludgebomb",
+				"thunder",
+				"explosion",
+				"hiddenpowergrass"
+			]
+		}
+	],
+	[
+		"wigglytuff",
+		{
+			"item": "leftovers",
+			"moves": [
+				"curse",
+				"return",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"wobbuffet",
+		{
+			"item": "leftovers",
+			"moves": [
+				"counter",
+				"mirrorcoat",
+				"destinybond",
+				"safeguard"
+			]
+		}
+	],
+	[
+		"xatu",
+		{
+			"item": "leftovers",
+			"moves": [
+				"psychic",
+				"drillpeck",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"yanma",
+		{
+			"item": "leftovers",
+			"moves": [
+				"curse",
+				"hiddenpowerbug",
+				"wingattack",
+				"gigadrain"
+			]
+		}
+	],
+	[
+		"zapdos",
+		{
+			"item": "leftovers",
+			"moves": [
+				"thunder",
+				"hiddenpowerice",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	]
+]
