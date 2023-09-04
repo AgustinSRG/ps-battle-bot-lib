@@ -16,73 +16,7 @@ npm install --save @asanrom/ps-battle-bot-lib
 
 In order to add battle functionality to your bot, instantiate `PokemonShowdownBattleBot`, call `receive` for each line received from Pokemon Showdown, and listen for the `send` event in order to send decision commands.
 
-Example:
-
-```ts
-import { PokemonShowdownBattleBot, DefaultBattleAnalyzerFactory, GenericNPCDecisionAlgorithm, TopDamageDecisionAlgorithm, toId } from "@asanrom/ps-battle-bot-lib";
-
-// Instantiate decision algorithms we want to use
-const exampleDefaultAlgorithm = new GenericNPCDecisionAlgorithm();
-const exampleTopDamageAlgorithm = new TopDamageDecisionAlgorithm();
-
-// This depends on your bot implementation
-const pokemonShowdownBot = createPokemonShowdownBotSomehow();
-
-// Instantiate the battle bot
-const battleBot = new PokemonShowdownBattleBot({
-    configFunc: battleDetails => {
-        if (toId(battleDetails.format).includes("challengecup1v1") || toId(battleDetails.format).includes("challengecup2v2")) {
-            // For 1v1 and 2v2 random, the best algorithm is just using the most damaging move
-            return {
-                algorithm: exampleTopDamageAlgorithm,
-                analyzerFactory: DefaultBattleAnalyzerFactory,
-            };
-        } 
-
-        // Default
-        return {
-            algorithm: exampleDefaultAlgorithm,
-            analyzerFactory: DefaultBattleAnalyzerFactory,
-        };
-    },
-    autoSetTimer: true,
-    maxBattles: 3,
-    acceptChallenges: true,
-    joinAbandonedBattles: true,
-    leaveAfterBattleEnds: true,
-});
-
-// For each line received, send it to the battle bot
-pokemonShowdownBot.on("line", (room, line) => {
-    battleBot.receive(room, line, line.split("|").slice(1), false);
-});
-
-// If the bot disconnects, call 'clear' to remove all battles
-pokemonShowdownBot.on("disconnected", () => {
-    battleBot.clear();
-});
-
-// Listen for the 'send' event. Make the bot send those messages to Pokemon Showdown.
-battleBot.on("send", (room, msg) => {
-    pokemonShowdownBot.send(room, msg);
-});
-
-// Battle started event
-battleBot.on("start", room => {
-    pokemonShowdownBot.send(room, "Good luck and have fun!");
-});
-
-// The bot won
-battleBot.on("win", room => {
-    pokemonShowdownBot.send(room, "GG i won");
-});
-
-// The bot lost
-battleBot.on("lose", room => {
-    pokemonShowdownBot.send(room, "gg wp i lost");
-});
-
-```
+[View example](./src/examples/example.ts)
 
 ## Documentation
 
@@ -107,3 +41,57 @@ Run the following command to build the typescript into javascript:
 ```sh
 npm run build
 ```
+
+## Running the example
+
+If you want to run the example, type:
+
+```
+npm start
+```
+
+You can configure the bot using environment variables.
+
+You can specify those variables in the `.env` file, in the current working directory.
+
+
+## Server connection details
+
+| Variable Name | Description                                                                          |
+| ------------- | ------------------------------------------------------------------------------------ |
+| SERVER_HOST   | Pokemon showdown server host. Default: `sim3.psim.us`                                |
+| SERVER_PORT   | Pokemon showdown server port. Default `443`                                          |
+| SERVER_SSL    | Set it to `YES` to use HTTPS. Set it to `NO` to use regular HTTP. Defaults to `YES`. |
+| SERVER_ID     | Pokemon showdown server ID. Default: `showdown`                                      |
+
+### Credentials
+
+| Variable Name    | Description                        |
+| ---------------- | ---------------------------------- |
+| ACCOUNT_NAME     | Pokemon showdown account name.     |
+| ACCOUNT_PASSWORD | Pokemon showdown account password. |
+
+### Battle bot configuration
+
+| Variable Name       | Description                                                                                                                        |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| AUTO_SET_TIMER      | Set it to `YES` for the bot to automatically set up the timer.                                                                     |
+| ACCEPT_CHALLENGES   | Set it to `YES` for the bot to automatically accept or reject challenges.                                                          |
+| CHALLENGE_WHITELIST | Specify the list of usernames the bot will accept challenges from. If not specified, the bot will accept challenges from any user. |
+| AUTO_LADDER         | Specify a format name for the bot to search ladder battles automatically.                                                          |
+| AUTO_LADDER_DELAY   | Milliseconds to wait in order to search for the next ladder battle. By default `10000` (10 seconds)                                |
+| MAX_BATTLES         | Max number of battles the bot will consider when accepting a challenge, or searching a ladder battle.                              |
+
+### Logging
+
+| Variable Name | Description                                                                    |
+| ------------- | ------------------------------------------------------------------------------ |
+| LOG_INFO      | Set to `YES` or `NO` to enable or disable info messages. Enabled by default.   |
+| LOG_DEBUG     | Set to `YES` or `NO` to enable or disable debug messages. Disabled by default. |
+| LOG_TRACE     | Set to `YES` or `NO` to enable or disable trace messages. Disabled by default. |
+
+### Other configuration
+
+| Variable Name | Description                                         |
+| ------------- | --------------------------------------------------- |
+| ROOMS_JOIN    | List of room to join on connection, spit by commas. |

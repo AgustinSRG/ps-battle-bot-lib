@@ -1,5 +1,9 @@
 # .npmignore file
 
+# examples
+
+dist/examples
+
 # Ignore downloaded dependencies
 
 node_modules
