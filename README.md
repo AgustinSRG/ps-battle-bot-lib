@@ -55,7 +55,7 @@ You can configure the bot using environment variables.
 You can specify those variables in the `.env` file, in the current working directory.
 
 
-## Server connection details
+### Server connection details
 
 | Variable Name | Description                                                                          |
 | ------------- | ------------------------------------------------------------------------------------ |

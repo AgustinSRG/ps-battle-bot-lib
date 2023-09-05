@@ -1,6 +1,10 @@
 # .npmignore file
 
-# examples
+# Env
+
+.env
+
+# Examples
 
 dist/examples
 
