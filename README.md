@@ -1,5 +1,6 @@
 # Pokemon Showdown battle bot library
 
+[![Node.js CI](https://github.com/AgustinSRG/ps-battle-bot-lib/actions/workflows/node.js.yml/badge.svg)](https://github.com/AgustinSRG/ps-battle-bot-lib/actions/workflows/node.js.yml)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/AgustinSRG/ps-battle-bot-lib/blob/master/LICENSE)
 
 Library for Pokemon Showdown Bots to be able to participate in battles. 
