@@ -629,13 +629,9 @@ export const MinorEventsAnalyzer: { [eventType in BattleEventMinor["type"]]: (an
             return;
         }
 
-        poke.active.details.species = event.species;
-
         poke.active.item.known = true;
         poke.active.item.revealed = true;
         poke.active.item.item = event.stone;
-
-        updateStatsOnSpeciesChange(battle, poke.active);
     },
     UltraBurst: function (analyzer: DefaultBattleAnalyzer, battle: Battle, event: BattleEvent_UltraBurst & { type: "UltraBurst"; }): void {
         const poke = findPokemonInBattle(battle, event.pokemon);
@@ -644,13 +640,9 @@ export const MinorEventsAnalyzer: { [eventType in BattleEventMinor["type"]]: (an
             return;
         }
 
-        poke.active.details.species = event.species;
-
         poke.active.item.known = true;
         poke.active.item.revealed = true;
         poke.active.item.item = event.item;
-
-        updateStatsOnSpeciesChange(battle, poke.active);
     },
     Terastallize: function (analyzer: DefaultBattleAnalyzer, battle: Battle, event: BattleEvent_Terastallize & { type: "Terastallize"; }): void {
         const poke = findPokemonInBattle(battle, event.pokemon);
