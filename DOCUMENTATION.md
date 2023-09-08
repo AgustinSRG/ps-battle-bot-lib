@@ -63,7 +63,7 @@ const bot = new PokemonShowdownBot({
 
 bot.on("line", (room, line, spl, isInit) => {
     // Send to the battle bot all the received lines
-     battleBot.receive(room, line, spl, isInit);
+    battleBot.receive(room, line, spl, isInit);
 });
 
 battleBot.on("send", (room, msg) => {
@@ -134,8 +134,159 @@ const team = parsePokemonTeam("Excadrill @ Focus Sash  \nAbility: Mold Breaker  
 ```
 ## Methods
 
+### Method: receive(room, line, splittedLine, initialMsg)
+
+Call this method to receive a line message from Pokemon Showdown. The received messages are required for the bot to be able to receive information, required to battle.
+
+Parameters:
+
+ - `room` - ID of the room where the message was received
+ - `line` - The raw line message
+ - `splittedLine` - Line splitted by `|`. The initial `|` is skipped, so `splittedLine[0]` is the message type.
+ - `initialMsg` - True if the line was received as an initial room message. This can be used to distinguish historical messages from real time ones.
+
+```ts
+bot.on("line", (room, line, spl, isInit) => {
+    // Send to the battle bot all the received lines
+    battleBot.receive(room, line, spl, isInit);
+});
+```
+
+### Method: clear()
+
+Clears any pending state of the bot. Resetting it to its default state. It should be called on disconnection.
+
+```ts
+bot.on("disconnected", err => {
+    // Clear battle bot
+    battleBot.clear();
+});
+```
+
+### Method: destroy()
+
+Releases any resources and also clears all listeners. After called, the battle bot object becomes unusable.
+
+```ts
+battleBot.destroy();
+```
+
 ## Events
 
+### Event: 'error'
+
+The `error` event is emitted when an error happens. Listen for this event to log any errors.
+
+Parameters:
+
+ - `err` - The error thrown.
+
+```ts
+battleBot.on("error", err => {
+    console.error(err);
+});
+```
+
+### Event: 'send'
+
+The `send` event is emitted when the battle bot wishes to send a message to the Pokemon Showdown server, to make a decision in battle, or accept a challenge for example.
+
+Parameters:
+
+ - `room` - ID of the room where the message should be sent
+ - `message` - The message to send
+
+```ts
+battleBot.on("send", (room, message) => {
+    // When the battle bot wants to send a message, send it to the server
+    bot.sendTo(room, msg);
+});
+```
+
+### Event: 'debug'
+
+The `debug` event is emitted when the analyzer or the battle algorithm wants to provide debug information.
+
+Parameters:
+
+ - `room` - ID of the battle room
+ - `msg` - The debug message
+
+```ts
+battleBot.on("debug", (battle, msg) => {
+    console.log(`[BATTLE-BOT-DEBUG] [${battle}] ${msg}`);
+});
+```
+
+### Event: 'start'
+
+The `start` event is emitted when a battle starts.
+
+Parameters:
+
+ - `room` - ID of the battle room
+
+```ts
+battleBot.on("start", battle => {
+    bot.sendTo(battle, "Hi, i'm a battle bot!");
+});
+```
+
+### Event: 'end'
+
+The `end` event is emitted when a battle ends.
+
+Parameters:
+
+ - `room` - ID of the battle room
+
+```ts
+battleBot.on("end", battle => {
+    bot.leaveRoom(battle, true);
+});
+```
+
+### Event: 'win'
+
+The `win` event is emitted when the bot wins a battle
+
+Parameters:
+
+ - `room` - ID of the battle room
+
+```ts
+battleBot.on("win", battle => {
+    bot.sendTo(battle, "GG, better luck next time!");
+});
+```
+
+### Event: 'lose'
+
+The `lose` event is emitted when the bot loses a battle
+
+Parameters:
+
+ - `room` - ID of the battle room
+
+```ts
+battleBot.on("lose", battle => {
+    bot.sendTo(battle, "gg, well played!");
+});
+```
+
+### Event: 'tie'
+
+The `tie` event is emitted when a battle ends in a tie.
+
+Parameters:
+
+ - `room` - ID of the battle room
+
+```ts
+battleBot.on("tie", battle => {
+    bot.sendTo(battle, "rematch?");
+});
+```
 
 ## Battle analyzers
 
