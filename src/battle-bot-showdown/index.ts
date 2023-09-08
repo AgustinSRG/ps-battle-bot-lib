@@ -204,7 +204,7 @@ export class PokemonShowdownBattleBot extends EventEmitter {
                 try {
                     const searchData: SearchData = SearchDataSchema.sanitize(JSON.parse(splittedLine.slice(1).join("|")));
                     this.isSearchingLadder = searchData.searching.length > 0;
-                    if (this.config.joinAbandonedBattles) {
+                    if (this.config.joinAbandonedBattles !== false) {
                         for (const battle of Object.keys(searchData.games)) {
                             if (!this.battles.has(simplifyBattleId(battle))) {
                                 // Join battles
@@ -375,7 +375,7 @@ export class PokemonShowdownBattleBot extends EventEmitter {
 
                 this.emit("end", battle.room);
 
-                if (this.config.leaveAfterBattleEnds) {
+                if (this.config.leaveAfterBattleEnds !== false) {
                     this.emit("send", "", "/noreply /leave " + battle.room);
                 }
             }
