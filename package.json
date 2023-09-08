@@ -16,6 +16,7 @@
     "lint": "eslint --fix src/**/*.ts",
     "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha --bail -r ts-node/register 'tests/**/*.ts'",
     "start": "node dist/examples/example.js",
+    "analyzer-debug": "node dist/examples/analyzer-debug.js",
     "gendoc": "typedoc --out docs ./src"
   },
   "files": [

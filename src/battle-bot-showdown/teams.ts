@@ -291,7 +291,7 @@ export function parsePokemonTeam(text: string): PokemonTeam {
             line = line.substring(1);
             if (line.substring(0, 1) === ' ') line = line.substring(1);
             if (line.substring(0, 14) === 'Hidden Power [') {
-                const hptype = line.substring(14, line.length - 15);
+                const hptype = line.substring('Hidden Power ['.length, line.length - 1);
                 line = 'Hidden Power ' + hptype;
                 if (!curSet.ivs && BattleTypeChart[hptype] && BattleTypeChart[hptype].HPivs) {
                     curSet.ivs = Object.create(null);

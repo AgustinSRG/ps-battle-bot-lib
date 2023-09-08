@@ -7,14 +7,29 @@ dotenv.config();
 
 import { PokemonShowdownBot } from "@asanrom/ps-bot-lib";
 import { Log } from "./log";
-import { DefaultBattleAnalyzerFactory, GenericNPCDecisionAlgorithm, PokemonShowdownBattleBot, TopDamageDecisionAlgorithm, toId, toRoomId } from "..";
+import {
+    DefaultBattleAnalyzerFactory,
+    GenericNPCDecisionAlgorithm,
+    PokemonShowdownBattleBot,
+    TopDamageDecisionAlgorithm,
+    toId,
+    toRoomId,
+    PokemonTeam,
+    parsePokemonTeam,
+    isBattle,
+    simplifyBattleId
+} from "..";
+import Path from "path";
+import { existsSync, readFileSync, readdirSync, statSync } from "fs";
+import { BattleLogger } from "./battle-logger";
 
 function main() {
     const username = process.env.ACCOUNT_NAME;
     const password = process.env.ACCOUNT_PASSWORD;
 
     if (!username || !password) {
-        Log.error("You must set both ACCOUNT_NAME and ACCOUNT_PASSWORD for this tool to work.");
+        Log.error("You must set both ACCOUNT_NAME and ACCOUNT_PASSWORD for this example to work.");
+        Log.error("Set the environment variables in the .env file or by any other method.");
         return;
     }
 
@@ -27,6 +42,60 @@ function main() {
     // Instantiate decision algorithms we want to use
     const exampleDefaultAlgorithm = new GenericNPCDecisionAlgorithm();
     const exampleTopDamageAlgorithm = new TopDamageDecisionAlgorithm();
+
+    // Load teams
+
+    const teams = new Map<string, PokemonTeam[]>();
+    const teamsFolder = Path.resolve(process.env.TEAMS_PATH || "teams");
+
+    let teamsCount = 0;
+
+    if (existsSync(teamsFolder)) {
+        const subPaths = readdirSync(teamsFolder);
+
+        for (const subPath of subPaths) {
+            const isDir = statSync(Path.resolve(teamsFolder, subPath)).isDirectory();
+
+            if (!isDir) {
+                continue;
+            }
+
+            const formatId = toId(subPath);
+
+            if (!formatId) {
+                continue;
+            }
+
+            const teamList: PokemonTeam[] = [];
+
+            teams.set(formatId, teamList);
+
+            const teamsFiles = readdirSync(Path.resolve(teamsFolder, subPath));
+
+            for (const teamFile of teamsFiles) {
+                if (!teamFile.endsWith(".txt")) {
+                    continue;
+                }
+
+                const team = parsePokemonTeam(readFileSync(Path.resolve(teamsFolder, subPath, teamFile)).toString());
+
+                if (team && team.length > 0) {
+                    teamList.push(team);
+                    teamsCount++;
+                }
+            }
+        }
+    }
+
+    if (teamsCount > 0) {
+        Log.info(`Loaded ${teamsCount} teams for ${teams.size} different formats.`);
+    }
+
+    let battleLogger: BattleLogger;
+
+    if (process.env.LOG_BATTLES === "YES") {
+        battleLogger = new BattleLogger(process.env.LOGS_PATH || "logs");
+    }
 
     // Battle bot
     const battleBot = new PokemonShowdownBattleBot({
@@ -45,6 +114,7 @@ function main() {
                 analyzerFactory: DefaultBattleAnalyzerFactory,
             };
         },
+        teams: teams,
         autoSetTimer: process.env.AUTO_SET_TIMER === "YES",
         maxBattles: parseInt(process.env.MAX_BATTLES || "0", 10) || 0,
         acceptChallenges: process.env.ACCEPT_CHALLENGES === "YES",
@@ -67,6 +137,9 @@ function main() {
 
     battleBot.on("debug", (battle, msg) => {
         Log.debug(`[BATTLE-BOT-DEBUG] [${battle}] ${msg}`);
+        if (battleLogger && Log.LOG_DEBUG) {
+            battleLogger.log(battle, "|debug|" + msg);
+        }
     });
 
     const bot = new PokemonShowdownBot({
@@ -77,6 +150,7 @@ function main() {
     });
 
     battleBot.on("send", (room, msg) => {
+        // When the battle bot wants to send a message, send it to the server
         bot.sendTo(room, msg);
     });
 
@@ -116,7 +190,28 @@ function main() {
 
     bot.on("line", (room, line, spl, isInit) => {
         Log.trace(`[${room}] ${line}`);
+        // Send to the battle bot all the received lines
         battleBot.receive(room, line, spl, isInit);
+
+        switch (spl[0]) {
+            case "init":
+                if (spl[1] === "battle" && battleLogger) {
+                    // Battle started
+                    battleLogger.initBattle(simplifyBattleId(room));
+                }
+                break;
+            case "deinit":
+                if (isBattle(room) && battleLogger) {
+                    // Battle ended
+                    battleLogger.close(simplifyBattleId(room));
+                }
+                break;
+            default:
+                if (isBattle(room) && battleLogger) {
+                    // Battle line
+                    battleLogger.log(simplifyBattleId(room), line);
+                }
+        }
     });
 
     bot.connect();

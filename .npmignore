@@ -19,3 +19,11 @@ temp
 package-lock.json
 npm-debug.log
 core
+
+# Teams
+
+teams
+
+# Logs
+
+logs

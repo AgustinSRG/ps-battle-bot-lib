@@ -4,6 +4,14 @@
 
 .env
 
+# Teams
+
+teams
+
+# Logs
+
+logs
+
 # Compilation Results
 
 dist
