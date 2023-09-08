@@ -106,17 +106,17 @@ const battleBot = new PokemonShowdownBattleBot({
 
 ### Optional configuration properties
 
-| Property name | Type | Description | Default value |
-| -- | -- | -- | -- |
-| `autoSetTimer` | `boolean` | True to automatically turn on the timer when stating a battle | `false` |
-| `teams` | `Map<string, PokemonTeam[]>` | Map each format ID with a list of teams the bot can use. The bot will randomly choose between the available options | `null` |
-| `acceptChallenges` | `boolean` | True to automatically accept incoming challenges, if possible. | `false` |
-| `acceptChallengeFunc` | `(user: string, format: string, rules: string[]) => boolean` | Function to decide whenever accept of reject a challenge, based on the user, the format and the custom rules | `null` |
-| `autoLadder` | `string` | Specify a format to automatically search for ladder battles. | `""` |
-| `autoLadderCheckDelay` | `number` | Delay, in milliseconds, to wait before searching for the next ladder battle, to prevent command spam. | `10000` |
-| `maxBattles` | `number` | Number of battles the bot will consider too many. If reached, the bot will no longer attempt to search for ladder battles or accept any challenges. Set it to `0` for no limit | `0` |
-| `joinAbandonedBattles` | `boolean` | True to join active battles if not already joined. This is very useful to rejoin battles after reconnection. | `true` |
-| `leaveAfterBattleEnds` | `boolean` | True to automatically leave battles after that have ended. | `true` |
+| Property name          | Type                                                         | Description                                                                                                                                                                    | Default value |
+| ---------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------- |
+| `autoSetTimer`         | `boolean`                                                    | True to automatically turn on the timer when stating a battle                                                                                                                  | `false`       |
+| `teams`                | `Map<string, PokemonTeam[]>`                                 | Map each format ID with a list of teams the bot can use. The bot will randomly choose between the available options                                                            | `null`        |
+| `acceptChallenges`     | `boolean`                                                    | True to automatically accept incoming challenges, if possible.                                                                                                                 | `false`       |
+| `acceptChallengeFunc`  | `(user: string, format: string, rules: string[]) => boolean` | Function to decide whenever accept of reject a challenge, based on the user, the format and the custom rules                                                                   | `null`        |
+| `autoLadder`           | `string`                                                     | Specify a format to automatically search for ladder battles.                                                                                                                   | `""`          |
+| `autoLadderCheckDelay` | `number`                                                     | Delay, in milliseconds, to wait before searching for the next ladder battle, to prevent command spam.                                                                          | `10000`       |
+| `maxBattles`           | `number`                                                     | Number of battles the bot will consider too many. If reached, the bot will no longer attempt to search for ladder battles or accept any challenges. Set it to `0` for no limit | `0`           |
+| `joinAbandonedBattles` | `boolean`                                                    | True to join active battles if not already joined. This is very useful to rejoin battles after reconnection.                                                                   | `true`        |
+| `leaveAfterBattleEnds` | `boolean`                                                    | True to automatically leave battles after that have ended.                                                                                                                     | `true`        |
 
 ### Parsing pokemon teams
 
@@ -290,5 +290,99 @@ battleBot.on("tie", battle => {
 
 ## Battle analyzers
 
+The battle analyzers are used to keep track of the battle status from the battle events.
+
+You can implement you own implementing the [BattleAnalyzer](./src/battle-analyzer/index.ts) interface.
+
+You can also use the default analyzer provided by this library: [DefaultBattleAnalyzer](./src/battle-analyzer/default/index.ts).
 
 ## Decision algorithms
+
+Decision algorithms are used to make a decision given a battle scenario.
+
+This library provides the following built-in algorithms:
+
+| Algorithm                                                                    | Description                                                                                                                                                                                                                                                                                                  |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [GenericNPCDecisionAlgorithm](./src/battle-decision/algorithms/generic-npc/) | This algorithm is meant to emulate a NPC from a game, being able to play any format, generation or game type. It's able to switch and use both status moves and damage moves. It's way worse than an average player and can be very predictable, but it's a good default if you do not care about win ratios |
+| [LegacyDecisionAlgorithm](./src/battle-decision/algorithms/legacy/)          | A legacy algorithm based on the one used in Showdown-Chatbot. It can be used as an alternative to `GenericNPCDecisionAlgorithm`                                                                                                                                                                              |
+| [TopDamageDecisionAlgorithm](./src/battle-decision/algorithms/top-damage/)   | This algorithm just calculates the damage dealt by moves and used the one that deals the most damage. It will not switch unless it's the only option. It very predictable, but surprisingly good in some formats, like Challenge Cup 1v1.                                                                    |
+| [RandomDecisionAlgorithm](./src/battle-decision/algorithms/random/)          | This algorithm just randomly makes a decision, similar to wild Pokemon in the games.                                                                                                                                                                                                                         |
+
+In order to implement you own algorithm, you must implement the [DecisionAlgorithm](./src/battle-decision/algorithm.ts) interface.
+
+To make things easier, you can take advantage of the [DecisionMaker](./src/battle-decision/decision-make.ts) interface and the `makeDecisionsSimple`, that will make a list of all possible decisions and let you decide individually for each slot.
+
+Here is an example of a decision algorithm:
+
+```ts
+// Random decision algorithm
+
+"use strict";
+
+import { randomlyChoose } from "../../../utils/random";
+import { SwitchSubDecision, MoveSubDecision, ShiftSubDecision, ActiveSubDecision } from "../../active-decision";
+import { DecisionAlgorithm } from "../../algorithm";
+import { DecisionMakeContext, DecisionSlot } from "../../context";
+import { BattleDecision } from "../../decision";
+import { DecisionMaker, makeDecisionsSimple } from "../../decision-make";
+import { ReviveSubDecision } from "../../force-switch-decision";
+import { TeamDecision } from "../../team-decision";
+
+/**
+ * Random decision algorithm configuration
+ */
+export interface RandomDecisionAlgorithmConfig {
+    /**
+     * Switch chance (0 - 1)
+     */
+    switchChance?: number;
+}
+
+/**
+ * Random decision algorithm
+ */
+export class RandomDecisionAlgorithm implements DecisionAlgorithm, DecisionMaker {
+    /**
+     * Switch chance (0 - 1)
+     */
+    public switchChance: number;
+
+    /**
+     * Instantiates the algorithm
+     * @param config Configuration
+     */
+    constructor(config?: RandomDecisionAlgorithmConfig) {
+        this.switchChance = 0;
+
+        if (config) {
+            this.switchChance = config.switchChance || 0;
+        }
+    }
+
+    public async chooseTeam(context: DecisionMakeContext, availableTeamDecisions: TeamDecision[]): Promise<TeamDecision> {
+        return randomlyChoose(availableTeamDecisions);
+    }
+
+    public async chooseForceSwitch(context: DecisionMakeContext, activeSlot: DecisionSlot, availableSwitchDecisions: SwitchSubDecision[]): Promise<SwitchSubDecision> {
+        return randomlyChoose(availableSwitchDecisions);
+    }
+
+    public async chooseRevival(context: DecisionMakeContext, availableRevivals: ReviveSubDecision[]): Promise<ReviveSubDecision> {
+        return randomlyChoose(availableRevivals);
+    }
+
+    public async chooseActive(context: DecisionMakeContext, activeSlot: DecisionSlot, availableMoveDecisions: MoveSubDecision[], availableSwitchDecisions: SwitchSubDecision[], availableShiftDecisions: ShiftSubDecision[]): Promise<ActiveSubDecision> {
+        if (availableSwitchDecisions.length > 0 && Math.random() < this.switchChance) {
+            // Switch
+            return randomlyChoose(availableSwitchDecisions);
+        } else {
+            return randomlyChoose(availableMoveDecisions);
+        }
+    }
+
+    public async decide(context: DecisionMakeContext): Promise<BattleDecision> {
+        return makeDecisionsSimple(context, this);
+    }
+}
+```
