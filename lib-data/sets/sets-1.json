@@ -318,8 +318,8 @@
 		{
 			"moves": [
 				"hypnosis",
-				"nightshade",
 				"thunderbolt",
+				"nightshade",
 				"explosion"
 			]
 		}
@@ -527,9 +527,9 @@
 		{
 			"moves": [
 				"fireblast",
-				"seismictoss",
-				"submission",
-				"psychic"
+				"bodyslam",
+				"confuseray",
+				"counter"
 			]
 		}
 	],
@@ -626,9 +626,9 @@
 		{
 			"moves": [
 				"earthquake",
-				"blizzard",
 				"thunderbolt",
-				"bodyslam"
+				"rockslide",
+				"blizzard"
 			]
 		}
 	],
@@ -836,7 +836,7 @@
 			"moves": [
 				"surf",
 				"blizzard",
-				"rest",
+				"hydropump",
 				"agility"
 			]
 		}
@@ -901,9 +901,9 @@
 		{
 			"moves": [
 				"thunderwave",
-				"recover",
 				"surf",
-				"thunderbolt"
+				"thunderbolt",
+				"recover"
 			]
 		}
 	],

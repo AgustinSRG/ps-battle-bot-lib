@@ -335,16 +335,16 @@
 		{
 			"ability": "multitype",
 			"item": "insectplate",
-			"nature": "Timid",
+			"nature": "Jolly",
 			"moves": [
-				"calmmind",
-				"judgment",
-				"icebeam",
-				"recover"
+				"swordsdance",
+				"xscissor",
+				"stoneedge",
+				"earthquake"
 			],
 			"evs": {
-				"hp": 4,
-				"spa": 252,
+				"atk": 252,
+				"def": 4,
 				"spe": 252
 			}
 		}
@@ -1848,16 +1848,13 @@
 		{
 			"ability": "magicguard",
 			"item": "eviolite",
-			"nature": "Bold",
+			"nature": "Impish",
 			"moves": [
-				"knockoff",
 				"seismictoss",
+				"knockoff",
 				"softboiled",
 				"stealthrock"
 			],
-			"ivs": {
-				"atk": 0
-			},
 			"evs": {
 				"hp": 252,
 				"def": 252,
@@ -1887,7 +1884,7 @@
 		{
 			"ability": "skilllink",
 			"item": "nevermeltice",
-			"nature": "Jolly",
+			"nature": "Adamant",
 			"moves": [
 				"shellsmash",
 				"iciclespear",
@@ -3319,26 +3316,6 @@
 				"atk": 252,
 				"def": 4,
 				"spe": 252
-			}
-		}
-	],
-	[
-		"exeggcute",
-		{
-			"ability": "chlorophyll",
-			"item": "eviolite",
-			"nature": "Bold",
-			"moves": [
-				"wish",
-				"gigadrain",
-				"leechseed",
-				"protect"
-			],
-			"evs": {
-				"hp": 116,
-				"def": 40,
-				"spa": 236,
-				"spe": 116
 			}
 		}
 	],
@@ -6664,14 +6641,14 @@
 			"item": "eviolite",
 			"nature": "Adamant",
 			"moves": [
-				"fakeout",
 				"highjumpkick",
 				"uturn",
+				"fakeout",
 				"taunt"
 			],
 			"evs": {
 				"atk": 252,
-				"def": 4,
+				"spd": 4,
 				"spe": 252
 			}
 		}
@@ -8456,7 +8433,7 @@
 		{
 			"ability": "levitate",
 			"item": "leftovers",
-			"nature": "Calm",
+			"nature": "Bold",
 			"moves": [
 				"voltswitch",
 				"hydropump",
@@ -8464,9 +8441,9 @@
 				"painsplit"
 			],
 			"evs": {
-				"hp": 248,
-				"def": 20,
-				"spd": 240
+				"hp": 252,
+				"def": 200,
+				"spd": 56
 			}
 		}
 	],

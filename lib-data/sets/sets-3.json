@@ -287,6 +287,25 @@
 		}
 	],
 	[
+		"bagon",
+		{
+			"ability": "rockhead",
+			"item": "sitrusberry",
+			"nature": "Adamant",
+			"moves": [
+				"dragondance",
+				"doubleedge",
+				"hiddenpowerghost",
+				"brickbreak"
+			],
+			"evs": {
+				"atk": 236,
+				"spd": 40,
+				"spe": 196
+			}
+		}
+	],
+	[
 		"banette",
 		{
 			"ability": "insomnia",
@@ -377,6 +396,25 @@
 				"hp": 4,
 				"spa": 252,
 				"spe": 252
+			}
+		}
+	],
+	[
+		"bellsprout",
+		{
+			"ability": "chlorophyll",
+			"item": "sitrusberry",
+			"nature": "Rash",
+			"moves": [
+				"sunnyday",
+				"solarbeam",
+				"hiddenpowerfire",
+				"sludgebomb"
+			],
+			"evs": {
+				"atk": 80,
+				"spa": 200,
+				"spe": 200
 			}
 		}
 	],
@@ -510,6 +548,28 @@
 				"hp": 92,
 				"atk": 176,
 				"spd": 240
+			}
+		}
+	],
+	[
+		"carvanha",
+		{
+			"ability": "roughskin",
+			"item": "salacberry",
+			"nature": "Modest",
+			"moves": [
+				"hydropump",
+				"crunch",
+				"hiddenpowergrass",
+				"endure"
+			],
+			"ivs": {
+				"atk": 0,
+				"spa": 30
+			},
+			"evs": {
+				"spa": 240,
+				"spe": 236
 			}
 		}
 	],
@@ -1244,6 +1304,28 @@
 		}
 	],
 	[
+		"exeggcute",
+		{
+			"ability": "chlorophyll",
+			"item": "sitrusberry",
+			"nature": "Mild",
+			"moves": [
+				"explosion",
+				"sunnyday",
+				"solarbeam",
+				"psychic"
+			],
+			"evs": {
+				"hp": 36,
+				"atk": 36,
+				"def": 36,
+				"spa": 196,
+				"spd": 156,
+				"spe": 36
+			}
+		}
+	],
+	[
 		"exeggutor",
 		{
 			"ability": "chlorophyll",
@@ -1866,6 +1948,30 @@
 		}
 	],
 	[
+		"horsea",
+		{
+			"ability": "swiftswim",
+			"item": "sitrusberry",
+			"nature": "Modest",
+			"moves": [
+				"hydropump",
+				"surf",
+				"hiddenpowergrass",
+				"raindance"
+			],
+			"ivs": {
+				"atk": 2,
+				"spa": 30
+			},
+			"evs": {
+				"hp": 36,
+				"def": 36,
+				"spa": 200,
+				"spe": 196
+			}
+		}
+	],
+	[
 		"houndoom",
 		{
 			"ability": "earlybird",
@@ -2158,6 +2264,26 @@
 		}
 	],
 	[
+		"koffing",
+		{
+			"ability": "levitate",
+			"item": "sitrusberry",
+			"nature": "Impish",
+			"moves": [
+				"sludgebomb",
+				"hiddenpowergrass",
+				"thief",
+				"explosion"
+			],
+			"evs": {
+				"hp": 116,
+				"atk": 76,
+				"def": 236,
+				"spe": 76
+			}
+		}
+	],
+	[
 		"kyogre",
 		{
 			"ability": "drizzle",
@@ -2230,6 +2356,25 @@
 				"hp": 252,
 				"def": 164,
 				"spa": 92
+			}
+		}
+	],
+	[
+		"larvitar",
+		{
+			"ability": "guts",
+			"item": "sitrusberry",
+			"nature": "Jolly",
+			"moves": [
+				"dragondance",
+				"rockslide",
+				"earthquake",
+				"hiddenpowerghost"
+			],
+			"evs": {
+				"atk": 248,
+				"spd": 40,
+				"spe": 188
 			}
 		}
 	],
@@ -2536,6 +2681,26 @@
 				"hp": 44,
 				"spa": 248,
 				"spe": 216
+			}
+		}
+	],
+	[
+		"mankey",
+		{
+			"ability": "vitalspirit",
+			"item": "salacberry",
+			"nature": "Jolly",
+			"moves": [
+				"reversal",
+				"hiddenpowerghost",
+				"substitute",
+				"endure"
+			],
+			"evs": {
+				"hp": 36,
+				"atk": 196,
+				"def": 80,
+				"spe": 196
 			}
 		}
 	],
@@ -3306,6 +3471,27 @@
 		}
 	],
 	[
+		"porygon",
+		{
+			"ability": "trace",
+			"item": "sitrusberry",
+			"nature": "Brave",
+			"moves": [
+				"recycle",
+				"icebeam",
+				"return",
+				"thunderwave"
+			],
+			"evs": {
+				"hp": 156,
+				"atk": 36,
+				"def": 116,
+				"spa": 76,
+				"spd": 76
+			}
+		}
+	],
+	[
 		"porygon2",
 		{
 			"ability": "trace",
@@ -3727,18 +3913,18 @@
 		"scyther",
 		{
 			"ability": "swarm",
-			"item": "leftovers",
-			"nature": "Adamant",
+			"item": "choiceband",
+			"nature": "Jolly",
 			"moves": [
-				"swordsdance",
-				"substitute",
-				"silverwind",
-				"hiddenpowerrock"
+				"hiddenpowerbug",
+				"aerialace",
+				"doubleedge",
+				"quickattack"
 			],
 			"evs": {
-				"hp": 40,
+				"hp": 4,
 				"atk": 252,
-				"spe": 216
+				"spe": 252
 			}
 		}
 	],
@@ -3926,7 +4112,7 @@
 			"nature": "Careful",
 			"moves": [
 				"spikes",
-				"whirlwind",
+				"roar",
 				"protect",
 				"toxic"
 			],
@@ -4680,6 +4866,27 @@
 				"atk": 252,
 				"spa": 4,
 				"spe": 252
+			}
+		}
+	],
+	[
+		"wailmer",
+		{
+			"ability": "waterveil",
+			"item": "sitrusberry",
+			"nature": "Sassy",
+			"moves": [
+				"selfdestruct",
+				"earthquake",
+				"surf",
+				"hiddenpowergrass"
+			],
+			"evs": {
+				"hp": 36,
+				"atk": 40,
+				"def": 76,
+				"spa": 120,
+				"spd": 236
 			}
 		}
 	],

@@ -362,7 +362,7 @@
 			"moves": [
 				"earthquake",
 				"rockslide",
-				"sludgebomb",
+				"screech",
 				"substitute"
 			]
 		}
@@ -424,6 +424,18 @@
 				"psychic",
 				"hiddenpowerwater",
 				"morningsun"
+			]
+		}
+	],
+	[
+		"exeggcute",
+		{
+			"item": "leftovers",
+			"moves": [
+				"stunspore",
+				"psychic",
+				"hiddenpowergrass",
+				"explosion"
 			]
 		}
 	],
@@ -695,10 +707,10 @@
 		{
 			"item": "leftovers",
 			"moves": [
+				"flamethrower",
+				"toxic",
 				"recover",
-				"thunderbolt",
-				"sacredfire",
-				"earthquake"
+				"whirlwind"
 			]
 		}
 	],
@@ -935,9 +947,9 @@
 		{
 			"item": "leftovers",
 			"moves": [
+				"thunder",
 				"hiddenpowerice",
 				"rest",
-				"thunderbolt",
 				"sleeptalk"
 			]
 		}
@@ -1227,8 +1239,8 @@
 			"item": "leftovers",
 			"moves": [
 				"spikes",
-				"explosion",
 				"rapidspin",
+				"explosion",
 				"toxic"
 			]
 		}
@@ -1286,10 +1298,10 @@
 		{
 			"item": "leftovers",
 			"moves": [
-				"doubleedge",
+				"thunder",
+				"icebeam",
 				"thunderwave",
-				"recover",
-				"curse"
+				"recover"
 			]
 		}
 	],
@@ -1322,10 +1334,10 @@
 		{
 			"item": "leftovers",
 			"moves": [
-				"ancientpower",
 				"earthquake",
-				"screech",
-				"rockslide"
+				"rockslide",
+				"ancientpower",
+				"screech"
 			]
 		}
 	],
@@ -1797,7 +1809,7 @@
 				"sludgebomb",
 				"thunder",
 				"explosion",
-				"hiddenpowergrass"
+				"fireblast"
 			]
 		}
 	],

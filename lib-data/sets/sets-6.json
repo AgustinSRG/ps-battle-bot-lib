@@ -2604,22 +2604,19 @@
 	[
 		"conkeldurr",
 		{
-			"ability": "ironfist",
-			"item": "lifeorb",
-			"nature": "Brave",
+			"ability": "guts",
+			"item": "assaultvest",
+			"nature": "Adamant",
 			"moves": [
-				"hammerarm",
-				"machpunch",
+				"drainpunch",
 				"icepunch",
-				"detect"
+				"knockoff",
+				"machpunch"
 			],
-			"ivs": {
-				"spe": 0
-			},
 			"evs": {
 				"hp": 252,
-				"atk": 252,
-				"spd": 4
+				"atk": 16,
+				"spd": 240
 			}
 		}
 	],
@@ -2795,6 +2792,44 @@
 				"hp": 248,
 				"def": 48,
 				"spe": 212
+			}
+		}
+	],
+	[
+		"crucibelle",
+		{
+			"ability": "regenerator",
+			"item": "crucibellite",
+			"nature": "Jolly",
+			"moves": [
+				"stoneedge",
+				"gunkshot",
+				"uturn",
+				"stealthrock"
+			],
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"spe": 252
+			}
+		}
+	],
+	[
+		"crucibellemega",
+		{
+			"ability": "magicguard",
+			"item": "crucibellite",
+			"nature": "Jolly",
+			"moves": [
+				"stoneedge",
+				"gunkshot",
+				"uturn",
+				"stealthrock"
+			],
+			"evs": {
+				"hp": 4,
+				"atk": 252,
+				"spe": 252
 			}
 		}
 	],
@@ -4616,14 +4651,14 @@
 			"item": "galladite",
 			"nature": "Jolly",
 			"moves": [
+				"swordsdance",
 				"closecombat",
-				"zenheadbutt",
-				"quickguard",
-				"protect"
+				"shadowsneak",
+				"knockoff"
 			],
 			"evs": {
-				"hp": 4,
 				"atk": 252,
+				"spd": 4,
 				"spe": 252
 			}
 		}
@@ -6530,6 +6565,25 @@
 		}
 	],
 	[
+		"kerfluffle",
+		{
+			"ability": "naturalcure",
+			"item": "choicespecs",
+			"nature": "Timid",
+			"moves": [
+				"moonblast",
+				"aurasphere",
+				"sludgebomb",
+				"partingshot"
+			],
+			"evs": {
+				"spa": 252,
+				"spd": 4,
+				"spe": 252
+			}
+		}
+	],
+	[
 		"kingdra",
 		{
 			"ability": "swiftswim",
@@ -7711,6 +7765,25 @@
 		}
 	],
 	[
+		"malaconda",
+		{
+			"ability": "harvest",
+			"item": "sitrusberry",
+			"nature": "Careful",
+			"moves": [
+				"knockoff",
+				"powerwhip",
+				"glare",
+				"uturn"
+			],
+			"evs": {
+				"hp": 252,
+				"atk": 4,
+				"spd": 252
+			}
+		}
+	],
+	[
 		"malamar",
 		{
 			"ability": "contrary",
@@ -8500,6 +8573,25 @@
 		}
 	],
 	[
+		"mollux",
+		{
+			"ability": "dryskin",
+			"item": "choicescarf",
+			"nature": "Modest",
+			"moves": [
+				"fireblast",
+				"sludgewave",
+				"hiddenpowerground",
+				"trick"
+			],
+			"evs": {
+				"spa": 252,
+				"spd": 4,
+				"spe": 252
+			}
+		}
+	],
+	[
 		"moltres",
 		{
 			"ability": "pressure",
@@ -8690,6 +8782,44 @@
 				"hp": 248,
 				"def": 252,
 				"spd": 8
+			}
+		}
+	],
+	[
+		"naviathan",
+		{
+			"ability": "heatproof",
+			"item": "leftovers",
+			"nature": "Bold",
+			"moves": [
+				"calmmind",
+				"slackoff",
+				"scald",
+				"taunt"
+			],
+			"evs": {
+				"hp": 252,
+				"def": 252,
+				"spa": 4
+			}
+		}
+	],
+	[
+		"necturna",
+		{
+			"ability": "forewarn",
+			"item": "colburberry",
+			"nature": "Impish",
+			"moves": [
+				"stickyweb",
+				"willowisp",
+				"shadowsneak",
+				"powerwhip"
+			],
+			"evs": {
+				"hp": 252,
+				"def": 252,
+				"spe": 4
 			}
 		}
 	],
@@ -9254,26 +9384,6 @@
 		}
 	],
 	[
-		"petilil",
-		{
-			"ability": "chlorophyll",
-			"item": "eviolite",
-			"nature": "Timid",
-			"moves": [
-				"gigadrain",
-				"sleeppowder",
-				"healingwish",
-				"hiddenpowerfire"
-			],
-			"evs": {
-				"def": 120,
-				"spa": 120,
-				"spd": 36,
-				"spe": 200
-			}
-		}
-	],
-	[
 		"phanpy",
 		{
 			"ability": "pickup",
@@ -9363,12 +9473,12 @@
 			"moves": [
 				"hurricane",
 				"heatwave",
-				"protect",
-				"hiddenpowerice"
+				"roost",
+				"defog"
 			],
 			"evs": {
+				"def": 4,
 				"spa": 252,
-				"spd": 4,
 				"spe": 252
 			}
 		}
@@ -9503,6 +9613,25 @@
 				"hp": 92,
 				"def": 252,
 				"spd": 148
+			}
+		}
+	],
+	[
+		"plasmanta",
+		{
+			"ability": "stormdrain",
+			"item": "blacksludge",
+			"nature": "Bold",
+			"moves": [
+				"sludgebomb",
+				"hiddenpowerfire",
+				"haze",
+				"taunt"
+			],
+			"evs": {
+				"hp": 252,
+				"def": 154,
+				"spe": 100
 			}
 		}
 	],
@@ -11919,18 +12048,18 @@
 		"staraptor",
 		{
 			"ability": "intimidate",
-			"item": "choicescarf",
-			"nature": "Adamant",
+			"item": "leftovers",
+			"nature": "Impish",
 			"moves": [
-				"finalgambit",
 				"bravebird",
-				"closecombat",
+				"roost",
+				"defog",
 				"uturn"
 			],
 			"evs": {
-				"hp": 252,
-				"atk": 68,
-				"spe": 188
+				"hp": 240,
+				"def": 252,
+				"spe": 16
 			}
 		}
 	],
@@ -13524,6 +13653,25 @@
 			"evs": {
 				"spa": 252,
 				"spd": 4,
+				"spe": 252
+			}
+		}
+	],
+	[
+		"volkraken",
+		{
+			"ability": "analytic",
+			"item": "choicescarf",
+			"nature": "Modest",
+			"moves": [
+				"fireblast",
+				"hydropump",
+				"surf",
+				"uturn"
+			],
+			"evs": {
+				"hp": 4,
+				"spa": 252,
 				"spe": 252
 			}
 		}

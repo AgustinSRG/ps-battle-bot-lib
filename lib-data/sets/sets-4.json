@@ -687,8 +687,8 @@
 				"machpunch"
 			],
 			"evs": {
-				"hp": 252,
-				"atk": 72,
+				"hp": 72,
+				"atk": 252,
 				"spe": 184
 			}
 		}
@@ -3040,8 +3040,8 @@
 			],
 			"evs": {
 				"hp": 252,
-				"spa": 96,
-				"spe": 160
+				"spa": 4,
+				"spe": 252
 			}
 		}
 	],
@@ -3339,17 +3339,17 @@
 		"infernape",
 		{
 			"ability": "blaze",
-			"item": "lifeorb",
+			"item": "expertbelt",
 			"nature": "Naive",
 			"moves": [
+				"fireblast",
 				"closecombat",
 				"uturn",
-				"stoneedge",
-				"overheat"
+				"grassknot"
 			],
 			"evs": {
-				"atk": 252,
-				"spa": 64,
+				"atk": 64,
+				"spa": 252,
 				"spe": 192
 			}
 		}
@@ -4496,15 +4496,15 @@
 			"item": "lumberry",
 			"nature": "Adamant",
 			"moves": [
-				"stealthrock",
 				"meteormash",
-				"bulletpunch",
-				"explosion"
+				"earthquake",
+				"explosion",
+				"stealthrock"
 			],
 			"evs": {
 				"hp": 252,
 				"atk": 252,
-				"spe": 4
+				"spd": 4
 			}
 		}
 	],
@@ -6668,12 +6668,12 @@
 				"spikes",
 				"roost",
 				"whirlwind",
-				"counter"
+				"bravebird"
 			],
 			"evs": {
 				"hp": 252,
-				"def": 180,
-				"spd": 76
+				"def": 252,
+				"spd": 4
 			}
 		}
 	],
@@ -6855,13 +6855,13 @@
 		"smeargle",
 		{
 			"ability": "owntempo",
-			"item": "focussash",
+			"item": "choicescarf",
 			"nature": "Jolly",
 			"moves": [
 				"spore",
-				"spikes",
+				"stealthrock",
 				"uturn",
-				"counter"
+				"trick"
 			],
 			"evs": {
 				"hp": 4,
@@ -7216,17 +7216,17 @@
 		"starmie",
 		{
 			"ability": "naturalcure",
-			"item": "lifeorb",
+			"item": "leftovers",
 			"nature": "Timid",
 			"moves": [
-				"hydropump",
-				"thunderbolt",
-				"icebeam",
-				"recover"
+				"rapidspin",
+				"recover",
+				"surf",
+				"thunderwave"
 			],
 			"evs": {
-				"spa": 252,
-				"spd": 4,
+				"hp": 252,
+				"def": 4,
 				"spe": 252
 			}
 		}
@@ -8203,18 +8203,18 @@
 		"weavile",
 		{
 			"ability": "pressure",
-			"item": "choiceband",
+			"item": "expertbelt",
 			"nature": "Jolly",
 			"moves": [
 				"pursuit",
 				"iceshard",
 				"lowkick",
-				"icepunch"
+				"nightslash"
 			],
 			"evs": {
-				"hp": 40,
 				"atk": 252,
-				"spe": 216
+				"spd": 4,
+				"spe": 252
 			}
 		}
 	],
