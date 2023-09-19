@@ -590,5 +590,9 @@ const ACCURACY_DATA: Map<number, Map<string, number>> = new Map([
         ["tripledive", 0.95],
         ["victorydance", 2],
         ["wildboltstorm", 0.8],
+        ["bloodmoon", 1],
+        ["ivycudgel", 1],
+        ["matchagotcha", 0.9],
+        ["syrupbomb", 0.85],
     ])],
 ]);

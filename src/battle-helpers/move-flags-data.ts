@@ -8,7 +8,7 @@ import { LAST_GEN } from "./initializers";
 /**
  * Move flag
  */
-export type MoveFlag = "protect" | "mirror" | "heal" | "snatch" | "bullet" | "contact" | "nosleeptalk" | "failinstruct" | "bite" | "wind" | "nonsky" | "punch" | "reflectable" | "failmefirst" | "noassist" | "failcopycat" | "slicing" | "charge" | "authentic" | "distance" | "noparentalbond" | "gravity" | "sound" | "bypasssub" | "recharge" | "failencore" | "failmimic" | "allyanim" | "dance" | "powder" | "defrost" | "futuremove" | "mustpressure" | "pulse" | "pledgecombo";
+export type MoveFlag = "protect" | "mirror" | "heal" | "snatch" | "bullet" | "contact" | "nosleeptalk" | "failinstruct" | "bite" | "wind" | "nonsky" | "punch" | "reflectable" | "failmefirst" | "noassist" | "failcopycat" | "slicing" | "charge" | "authentic" | "distance" | "noparentalbond" | "gravity" | "sound" | "bypasssub" | "recharge" | "failencore" | "failmimic" | "allyanim" | "dance" | "powder" | "defrost" | "futuremove" | "mustpressure" | "pulse" | "pledgecombo" | "cantusetwice";
 
 /**
  * Get move flags
@@ -1001,7 +1001,7 @@ const FLAGS_DATA: Map<number, Map<string, Set<MoveFlag>>> = new Map([
         ["esperwing", new Set(["protect", "mirror"])],
         ["filletaway", new Set(["snatch"])],
         ["flowertrick", new Set(["protect", "mirror"])],
-        ["gigatonhammer", new Set(["protect", "mirror"])],
+        ["gigatonhammer", new Set(["protect", "mirror", "cantusetwice"])],
         ["glaiverush", new Set(["contact", "protect", "mirror"])],
         ["headlongrush", new Set(["contact", "protect", "mirror", "punch"])],
         ["hydrosteam", new Set(["protect", "mirror", "defrost"])],
@@ -1054,6 +1054,10 @@ const FLAGS_DATA: Map<number, Map<string, Set<MoveFlag>>> = new Map([
         ["wavecrash", new Set(["contact", "protect", "mirror"])],
         ["wickedtorque", new Set(["protect", "failencore", "failmefirst", "nosleeptalk", "noassist", "failcopycat", "failinstruct", "failmimic"])],
         ["wildboltstorm", new Set(["protect", "mirror", "wind"])],
+        ["bloodmoon", new Set(["protect", "mirror", "cantusetwice"])],
+        ["ivycudgel", new Set(["protect", "mirror"])],
+        ["matchagotcha", new Set(["protect", "mirror", "defrost"])],
+        ["syrupbomb", new Set(["protect", "mirror", "bullet"])],
     ])],
 ]);
 

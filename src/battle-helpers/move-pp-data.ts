@@ -1042,6 +1042,10 @@ const PP_DATA: Map<number, Map<string, number>> = new Map([
         ["wavecrash", 10],
         ["wickedtorque", 10],
         ["wildboltstorm", 10],
+        ["bloodmoon", 5],
+        ["ivycudgel", 10],
+        ["matchagotcha", 15],
+        ["syrupbomb", 10],
     ])],
 ]);
 
