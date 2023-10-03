@@ -306,6 +306,26 @@
 		}
 	],
 	[
+		"baltoy",
+		{
+			"ability": "levitate",
+			"item": "sitrusberry",
+			"nature": "Careful",
+			"moves": [
+				"explosion",
+				"earthquake",
+				"rockslide",
+				"shadowball"
+			],
+			"evs": {
+				"hp": 36,
+				"atk": 196,
+				"def": 156,
+				"spd": 116
+			}
+		}
+	],
+	[
 		"banette",
 		{
 			"ability": "insomnia",
@@ -462,7 +482,7 @@
 		{
 			"ability": "naturalcure",
 			"item": "leftovers",
-			"nature": "Bold",
+			"nature": "Modest",
 			"moves": [
 				"softboiled",
 				"icebeam",
@@ -470,9 +490,9 @@
 				"thunderwave"
 			],
 			"evs": {
-				"hp": 44,
 				"def": 252,
-				"spa": 212
+				"spa": 252,
+				"spe": 4
 			}
 		}
 	],
@@ -510,6 +530,29 @@
 			"evs": {
 				"hp": 252,
 				"spe": 252
+			}
+		}
+	],
+	[
+		"cacnea",
+		{
+			"ability": "sandveil",
+			"item": "sitrusberry",
+			"nature": "Timid",
+			"moves": [
+				"spikes",
+				"gigadrain",
+				"thunderpunch",
+				"hiddenpowerwater"
+			],
+			"ivs": {
+				"atk": 2,
+				"def": 30,
+				"spa": 30
+			},
+			"evs": {
+				"spa": 240,
+				"spe": 236
 			}
 		}
 	],
@@ -859,6 +902,26 @@
 				"hp": 80,
 				"atk": 252,
 				"spe": 176
+			}
+		}
+	],
+	[
+		"cubone",
+		{
+			"ability": "rockhead",
+			"item": "thickclub",
+			"nature": "Adamant",
+			"moves": [
+				"bonemerang",
+				"doubleedge",
+				"hiddenpowerghost",
+				"swordsdance"
+			],
+			"evs": {
+				"hp": 36,
+				"atk": 196,
+				"spd": 40,
+				"spe": 236
 			}
 		}
 	],
@@ -1262,6 +1325,28 @@
 				"def": 116,
 				"spa": 252,
 				"spe": 96
+			}
+		}
+	],
+	[
+		"elekid",
+		{
+			"ability": "static",
+			"item": "petayaberry",
+			"nature": "Timid",
+			"moves": [
+				"thunderbolt",
+				"hiddenpowergrass",
+				"icepunch",
+				"substitute"
+			],
+			"ivs": {
+				"atk": 2,
+				"spa": 30
+			},
+			"evs": {
+				"spa": 240,
+				"spe": 236
 			}
 		}
 	],
@@ -2455,6 +2540,26 @@
 		}
 	],
 	[
+		"lileep",
+		{
+			"ability": "suctioncups",
+			"item": "sitrusberry",
+			"nature": "Careful",
+			"moves": [
+				"recover",
+				"rockslide",
+				"amnesia",
+				"toxic"
+			],
+			"evs": {
+				"atk": 188,
+				"def": 140,
+				"spd": 140,
+				"spe": 12
+			}
+		}
+	],
+	[
 		"linoone",
 		{
 			"ability": "pickup",
@@ -2609,6 +2714,27 @@
 		}
 	],
 	[
+		"machop",
+		{
+			"ability": "guts",
+			"item": "sitrusberry",
+			"nature": "Adamant",
+			"moves": [
+				"substitute",
+				"hiddenpowerghost",
+				"crosschop",
+				"rockslide"
+			],
+			"evs": {
+				"hp": 116,
+				"atk": 116,
+				"def": 120,
+				"spd": 80,
+				"spe": 76
+			}
+		}
+	],
+	[
 		"magcargo",
 		{
 			"ability": "flamebody",
@@ -2643,6 +2769,30 @@
 				"atk": 64,
 				"spa": 252,
 				"spe": 192
+			}
+		}
+	],
+	[
+		"magnemite",
+		{
+			"ability": "sturdy",
+			"item": "sitrusberry",
+			"nature": "Calm",
+			"moves": [
+				"thunderbolt",
+				"hiddenpowergrass",
+				"thunderwave",
+				"metalsound"
+			],
+			"ivs": {
+				"atk": 2,
+				"spa": 30
+			},
+			"evs": {
+				"hp": 156,
+				"def": 116,
+				"spa": 80,
+				"spd": 156
 			}
 		}
 	],
@@ -2836,6 +2986,26 @@
 				"def": 132,
 				"spa": 72,
 				"spd": 52
+			}
+		}
+	],
+	[
+		"meowth",
+		{
+			"ability": "pickup",
+			"item": "silkscarf",
+			"nature": "Jolly",
+			"moves": [
+				"fakeout",
+				"doubleedge",
+				"shadowball",
+				"hiddenpowerwater"
+			],
+			"evs": {
+				"hp": 36,
+				"atk": 240,
+				"spd": 36,
+				"spe": 196
 			}
 		}
 	],
@@ -3394,6 +3564,25 @@
 		}
 	],
 	[
+		"pineco",
+		{
+			"ability": "sturdy",
+			"item": "sitrusberry",
+			"nature": "Bold",
+			"moves": [
+				"spikes",
+				"gigadrain",
+				"lightscreen",
+				"explosion"
+			],
+			"evs": {
+				"hp": 196,
+				"def": 196,
+				"spd": 76
+			}
+		}
+	],
+	[
 		"pinsir",
 		{
 			"ability": "hypercutter",
@@ -3467,6 +3656,28 @@
 				"atk": 252,
 				"def": 24,
 				"spe": 204
+			}
+		}
+	],
+	[
+		"ponyta",
+		{
+			"ability": "runaway",
+			"item": "sitrusberry",
+			"nature": "Timid",
+			"moves": [
+				"sunnyday",
+				"solarbeam",
+				"substitute",
+				"fireblast"
+			],
+			"ivs": {
+				"atk": 0
+			},
+			"evs": {
+				"spa": 236,
+				"spd": 76,
+				"spe": 196
 			}
 		}
 	],
@@ -4242,6 +4453,27 @@
 		}
 	],
 	[
+		"snubbull",
+		{
+			"ability": "intimidate",
+			"item": "sitrusberry",
+			"nature": "Adamant",
+			"moves": [
+				"return",
+				"shadowball",
+				"earthquake",
+				"thief"
+			],
+			"evs": {
+				"hp": 116,
+				"atk": 196,
+				"def": 36,
+				"spd": 116,
+				"spe": 36
+			}
+		}
+	],
+	[
 		"solrock",
 		{
 			"ability": "levitate",
@@ -4315,6 +4547,29 @@
 				"hp": 4,
 				"spa": 252,
 				"spe": 252
+			}
+		}
+	],
+	[
+		"staryu",
+		{
+			"ability": "naturalcure",
+			"item": "sitrusberry",
+			"nature": "Timid",
+			"moves": [
+				"thunderbolt",
+				"thunderwave",
+				"hiddenpowergrass",
+				"hydropump"
+			],
+			"ivs": {
+				"atk": 2,
+				"spa": 30
+			},
+			"evs": {
+				"hp": 36,
+				"spa": 200,
+				"spe": 236
 			}
 		}
 	],

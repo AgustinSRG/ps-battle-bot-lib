@@ -311,10 +311,10 @@
 			"item": "heavydutyboots",
 			"nature": "Relaxed",
 			"moves": [
+				"scald",
 				"wish",
 				"protect",
-				"whirlpool",
-				"chillingwater"
+				"flipturn"
 			],
 			"ivs": {
 				"spe": 0
@@ -884,14 +884,14 @@
 			"item": "earthplate",
 			"nature": "Adamant",
 			"moves": [
-				"earthquake",
 				"dragondance",
-				"shadowclaw",
-				"taunt"
+				"earthquake",
+				"taunt",
+				"shadowclaw"
 			],
 			"evs": {
 				"atk": 252,
-				"spd": 4,
+				"def": 4,
 				"spe": 252
 			}
 		}
@@ -1089,15 +1089,15 @@
 			"item": "leftovers",
 			"nature": "Naive",
 			"moves": [
-				"substitute",
 				"boltbeak",
 				"blizzard",
-				"lowkick"
+				"lowkick",
+				"substitute"
 			],
 			"evs": {
-				"atk": 252,
-				"spa": 4,
-				"spe": 252
+				"atk": 208,
+				"spa": 76,
+				"spe": 224
 			}
 		}
 	],
@@ -1530,14 +1530,14 @@
 	[
 		"banette",
 		{
-			"ability": "frisk",
-			"item": "lifeorb",
-			"nature": "Jolly",
+			"ability": "insomnia",
+			"item": "heavydutyboots",
+			"nature": "Adamant",
 			"moves": [
 				"swordsdance",
 				"knockoff",
-				"shadowclaw",
-				"suckerpunch"
+				"shadowsneak",
+				"encore"
 			],
 			"evs": {
 				"atk": 252,
@@ -1857,7 +1857,7 @@
 		"bellsprout",
 		{
 			"ability": "chlorophyll",
-			"item": "poisoniumz",
+			"item": "lifeorb",
 			"nature": "Modest",
 			"moves": [
 				"solarbeam",
@@ -1865,6 +1865,9 @@
 				"weatherball",
 				"sleeppowder"
 			],
+			"ivs": {
+				"atk": 0
+			},
 			"evs": {
 				"def": 76,
 				"spa": 196,
@@ -2645,7 +2648,7 @@
 				"trickroom",
 				"glaciallance",
 				"swordsdance",
-				"stompingtantrum"
+				"highhorsepower"
 			],
 			"evs": {
 				"hp": 248,
@@ -3128,7 +3131,7 @@
 			"item": "choicescarf",
 			"nature": "Timid",
 			"moves": [
-				"flamethrower",
+				"weatherball",
 				"fireblast",
 				"overheat",
 				"sleeptalk"
@@ -3577,13 +3580,13 @@
 		"clefable",
 		{
 			"ability": "magicguard",
-			"item": "rockyhelmet",
+			"item": "leftovers",
 			"nature": "Bold",
 			"moves": [
-				"moonblast",
-				"softboiled",
-				"knockoff",
-				"stealthrock"
+				"wish",
+				"protect",
+				"stealthrock",
+				"moonblast"
 			],
 			"evs": {
 				"hp": 252,
@@ -3867,12 +3870,12 @@
 		{
 			"ability": "adaptability",
 			"item": "eviolite",
-			"nature": "Adamant",
+			"nature": "Jolly",
 			"moves": [
+				"dragondance",
 				"crabhammer",
 				"aquajet",
-				"knockoff",
-				"swordsdance"
+				"knockoff"
 			],
 			"evs": {
 				"atk": 196,
@@ -4079,17 +4082,17 @@
 		"crawdaunt",
 		{
 			"ability": "adaptability",
-			"item": "choiceband",
+			"item": "lifeorb",
 			"nature": "Adamant",
 			"moves": [
+				"swordsdance",
 				"crabhammer",
 				"knockoff",
-				"aquajet",
-				"closecombat"
+				"aquajet"
 			],
 			"evs": {
 				"atk": 252,
-				"def": 4,
+				"spd": 4,
 				"spe": 252
 			}
 		}
@@ -5172,14 +5175,14 @@
 			"nature": "Adamant",
 			"moves": [
 				"dragondance",
+				"outrage",
 				"extremespeed",
-				"waterfall",
-				"rest"
+				"ironhead"
 			],
 			"evs": {
-				"hp": 92,
 				"atk": 252,
-				"spe": 164
+				"spd": 4,
+				"spe": 252
 			}
 		}
 	],
@@ -6006,19 +6009,22 @@
 	[
 		"empoleon",
 		{
-			"ability": "torrent",
+			"ability": "competitive",
 			"item": "leftovers",
-			"nature": "Calm",
+			"nature": "Sassy",
 			"moves": [
-				"scald",
-				"stealthrock",
-				"toxic",
-				"protect"
+				"flipturn",
+				"surf",
+				"roost",
+				"stealthrock"
 			],
+			"ivs": {
+				"spe": 0
+			},
 			"evs": {
 				"hp": 252,
-				"def": 76,
-				"spd": 180
+				"def": 4,
+				"spd": 252
 			}
 		}
 	],
@@ -7676,17 +7682,17 @@
 		{
 			"ability": "poisonheal",
 			"item": "toxicorb",
-			"nature": "Jolly",
+			"nature": "Impish",
 			"moves": [
-				"swordsdance",
-				"roost",
 				"earthquake",
-				"facade"
+				"toxic",
+				"protect",
+				"spikes"
 			],
 			"evs": {
 				"hp": 244,
-				"spd": 244,
-				"spe": 20
+				"def": 252,
+				"spd": 12
 			}
 		}
 	],
@@ -7944,10 +7950,10 @@
 			"item": "choicescarf",
 			"nature": "Modest",
 			"moves": [
-				"trick",
 				"psychic",
+				"thunderbolt",
 				"terablast",
-				"thunderbolt"
+				"trick"
 			],
 			"ivs": {
 				"atk": 0
@@ -9273,12 +9279,12 @@
 		{
 			"ability": "prankster",
 			"item": "lightclay",
-			"nature": "Impish",
+			"nature": "Bold",
 			"moves": [
 				"reflect",
 				"lightscreen",
 				"partingshot",
-				"drainpunch"
+				"dazzlinggleam"
 			],
 			"evs": {
 				"hp": 156,
@@ -9640,15 +9646,15 @@
 			"item": "leftovers",
 			"nature": "Careful",
 			"moves": [
-				"wish",
 				"ironhead",
-				"bodyslam",
-				"protect"
+				"thunderwave",
+				"stealthrock",
+				"uturn"
 			],
 			"evs": {
-				"hp": 252,
-				"spd": 184,
-				"spe": 72
+				"hp": 240,
+				"spd": 248,
+				"spe": 20
 			}
 		}
 	],
@@ -9985,9 +9991,9 @@
 			"item": "lumberry",
 			"nature": "Adamant",
 			"moves": [
+				"swordsdance",
 				"suckerpunch",
 				"kowtowcleave",
-				"swordsdance",
 				"ironhead"
 			],
 			"evs": {
@@ -10174,18 +10180,20 @@
 		{
 			"ability": "neutralizinggas",
 			"item": "eviolite",
-			"nature": "Bold",
+			"nature": "Calm",
 			"moves": [
+				"willowisp",
 				"sludgebomb",
 				"fireblast",
-				"willowisp",
 				"painsplit"
 			],
+			"ivs": {
+				"atk": 0
+			},
 			"evs": {
-				"def": 76,
-				"spa": 196,
-				"spd": 76,
-				"spe": 156
+				"hp": 116,
+				"def": 156,
+				"spa": 196
 			}
 		}
 	],
@@ -10212,19 +10220,18 @@
 		"kommoo",
 		{
 			"ability": "bulletproof",
-			"item": "leftovers",
-			"nature": "Impish",
+			"item": "throatspray",
+			"nature": "Timid",
 			"moves": [
-				"bodypress",
-				"earthquake",
-				"stealthrock",
-				"toxic"
+				"clangoroussoul",
+				"boomburst",
+				"clangingscales",
+				"flamethrower"
 			],
 			"evs": {
-				"hp": 252,
-				"def": 148,
-				"spd": 40,
-				"spe": 68
+				"spa": 252,
+				"spd": 4,
+				"spe": 252
 			}
 		}
 	],
@@ -10232,19 +10239,18 @@
 		"kommoototem",
 		{
 			"ability": "bulletproof",
-			"item": "leftovers",
-			"nature": "Impish",
+			"item": "throatspray",
+			"nature": "Timid",
 			"moves": [
-				"bodypress",
-				"earthquake",
-				"stealthrock",
-				"toxic"
+				"clangoroussoul",
+				"boomburst",
+				"clangingscales",
+				"flamethrower"
 			],
 			"evs": {
-				"hp": 252,
-				"def": 148,
-				"spd": 40,
-				"spe": 68
+				"spa": 252,
+				"spd": 4,
+				"spe": 252
 			}
 		}
 	],
@@ -10580,11 +10586,11 @@
 		{
 			"ability": "flamebody",
 			"item": "eviolite",
-			"nature": "Impish",
+			"nature": "Bold",
 			"moves": [
+				"willowisp",
 				"flareblitz",
 				"uturn",
-				"willowisp",
 				"morningsun"
 			],
 			"evs": {
@@ -11516,6 +11522,9 @@
 				"thunderbolt",
 				"terablast"
 			],
+			"ivs": {
+				"atk": 0
+			},
 			"evs": {
 				"def": 36,
 				"spa": 236,
@@ -11621,18 +11630,18 @@
 	[
 		"mamoswine",
 		{
-			"ability": "thickfat",
-			"item": "choiceband",
-			"nature": "Adamant",
+			"ability": "oblivious",
+			"item": "focussash",
+			"nature": "Jolly",
 			"moves": [
-				"iciclecrash",
+				"stealthrock",
 				"earthquake",
-				"iceshard",
-				"knockoff"
+				"iciclecrash",
+				"iceshard"
 			],
 			"evs": {
 				"atk": 252,
-				"def": 4,
+				"spd": 4,
 				"spe": 252
 			}
 		}
@@ -11641,18 +11650,18 @@
 		"manaphy",
 		{
 			"ability": "hydration",
-			"item": "wateriumz",
-			"nature": "Modest",
+			"item": "leftovers",
+			"nature": "Timid",
 			"moves": [
 				"tailglow",
-				"rest",
 				"surf",
-				"icebeam"
+				"dazzlinggleam",
+				"energyball"
 			],
 			"evs": {
-				"hp": 248,
-				"spa": 240,
-				"spe": 20
+				"def": 4,
+				"spa": 252,
+				"spe": 252
 			}
 		}
 	],
@@ -11663,16 +11672,16 @@
 			"item": "heavydutyboots",
 			"nature": "Impish",
 			"moves": [
-				"foulplay",
-				"roost",
+				"knockoff",
+				"toxic",
 				"defog",
-				"uturn"
+				"roost"
 			],
 			"evs": {
-				"hp": 248,
-				"def": 92,
-				"spd": 152,
-				"spe": 16
+				"hp": 252,
+				"def": 56,
+				"spd": 144,
+				"spe": 56
 			}
 		}
 	],
@@ -11958,10 +11967,10 @@
 			"item": "widelens",
 			"nature": "Jolly",
 			"moves": [
-				"encore",
+				"tidyup",
 				"populationbomb",
 				"bite",
-				"tidyup"
+				"encore"
 			],
 			"evs": {
 				"atk": 252,
@@ -12235,7 +12244,7 @@
 				"fakeout",
 				"feint",
 				"uturn",
-				"assurance"
+				"playrough"
 			],
 			"ivs": {
 				"hp": 19
@@ -12296,7 +12305,7 @@
 				"fakeout",
 				"feint",
 				"uturn",
-				"assurance"
+				"playrough"
 			],
 			"ivs": {
 				"hp": 19
@@ -12496,8 +12505,8 @@
 			"nature": "Jolly",
 			"moves": [
 				"highjumpkick",
-				"uturn",
 				"knockoff",
+				"uturn",
 				"fakeout"
 			],
 			"evs": {
@@ -13297,8 +13306,9 @@
 				"stoneedge"
 			],
 			"evs": {
-				"atk": 224,
-				"def": 32,
+				"hp": 28,
+				"atk": 220,
+				"def": 8,
 				"spe": 252
 			}
 		}
@@ -13331,7 +13341,7 @@
 			"moves": [
 				"sludgewave",
 				"earthpower",
-				"thunderbolt",
+				"icebeam",
 				"flamethrower"
 			],
 			"evs": {
@@ -13464,17 +13474,17 @@
 		"ninetalesalola",
 		{
 			"ability": "snowwarning",
-			"item": "icyrock",
+			"item": "lightclay",
 			"nature": "Timid",
 			"moves": [
 				"auroraveil",
-				"freezedry",
 				"encore",
-				"painsplit"
+				"freezedry",
+				"moonblast"
 			],
 			"evs": {
 				"hp": 252,
-				"spa": 4,
+				"spd": 4,
 				"spe": 252
 			}
 		}
@@ -13672,6 +13682,63 @@
 				"def": 236,
 				"spd": 76,
 				"spe": 36
+			}
+		}
+	],
+	[
+		"ogerpon",
+		{
+			"ability": "defiant",
+			"item": "heavydutyboots",
+			"nature": "Jolly",
+			"moves": [
+				"swordsdance",
+				"ivycudgel",
+				"knockoff",
+				"encore"
+			],
+			"evs": {
+				"atk": 252,
+				"spd": 4,
+				"spe": 252
+			}
+		}
+	],
+	[
+		"ogerponcornerstone",
+		{
+			"ability": "sturdy",
+			"item": "cornerstonemask",
+			"nature": "Jolly",
+			"moves": [
+				"swordsdance",
+				"ivycudgel",
+				"powerwhip",
+				"lowkick"
+			],
+			"evs": {
+				"atk": 252,
+				"spd": 4,
+				"spe": 252
+			}
+		}
+	],
+	[
+		"ogerponwellspring",
+		{
+			"ability": "waterabsorb",
+			"item": "wellspringmask",
+			"nature": "Jolly",
+			"moves": [
+				"swordsdance",
+				"ivycudgel",
+				"powerwhip",
+				"knockoff"
+			],
+			"evs": {
+				"atk": 252,
+				"spd": 4,
+				"spe": 252
 			}
 		}
 	],
@@ -14609,17 +14676,17 @@
 		{
 			"ability": "thickfat",
 			"item": "eviolite",
-			"nature": "Adamant",
+			"nature": "Careful",
 			"moves": [
-				"stealthrock",
 				"earthquake",
-				"iciclecrash",
-				"iceshard"
+				"stealthrock",
+				"rockslide",
+				"toxic"
 			],
 			"evs": {
-				"hp": 252,
-				"atk": 252,
-				"spd": 4
+				"hp": 244,
+				"atk": 12,
+				"spd": 252
 			}
 		}
 	],
@@ -15270,14 +15337,14 @@
 			"nature": "Impish",
 			"moves": [
 				"spikes",
-				"superfang",
-				"stoneedge",
-				"synthesis"
+				"synthesis",
+				"woodhammer",
+				"taunt"
 			],
 			"evs": {
 				"hp": 252,
 				"def": 252,
-				"spd": 4
+				"spe": 4
 			}
 		}
 	],
@@ -15694,17 +15761,17 @@
 		{
 			"ability": "slowstart",
 			"item": "leftovers",
-			"nature": "Adamant",
+			"nature": "Careful",
 			"moves": [
-				"thunderwave",
+				"rest",
+				"sleeptalk",
 				"knockoff",
-				"return",
-				"drainpunch"
+				"bodyslam"
 			],
 			"evs": {
 				"hp": 252,
-				"atk": 252,
-				"spd": 4
+				"def": 4,
+				"spd": 252
 			}
 		}
 	],
@@ -15927,8 +15994,11 @@
 				"stickyweb",
 				"moonblast",
 				"stunspore",
-				"uturn"
+				"psychic"
 			],
+			"ivs": {
+				"atk": 0
+			},
 			"evs": {
 				"spa": 252,
 				"spd": 4,
@@ -15946,8 +16016,11 @@
 				"stickyweb",
 				"moonblast",
 				"stunspore",
-				"uturn"
+				"psychic"
 			],
+			"ivs": {
+				"atk": 0
+			},
 			"evs": {
 				"spa": 252,
 				"spd": 4,
@@ -16516,14 +16589,14 @@
 	[
 		"sandile",
 		{
-			"ability": "moxie",
+			"ability": "intimidate",
 			"item": "eviolite",
 			"nature": "Jolly",
 			"moves": [
-				"earthquake",
-				"crunch",
 				"stealthrock",
-				"protect"
+				"terablast",
+				"earthquake",
+				"stoneedge"
 			],
 			"evs": {
 				"atk": 180,
@@ -16557,13 +16630,13 @@
 		"sandshrewalola",
 		{
 			"ability": "slushrush",
-			"item": "widelens",
+			"item": "eviolite",
 			"nature": "Jolly",
 			"moves": [
-				"tripleaxel",
+				"swordsdance",
+				"iciclespear",
 				"earthquake",
-				"rapidspin",
-				"swordsdance"
+				"rapidspin"
 			],
 			"evs": {
 				"hp": 36,
@@ -18347,8 +18420,8 @@
 		"snover",
 		{
 			"ability": "snowwarning",
-			"item": "eviolite",
-			"nature": "Relaxed",
+			"item": "icyrock",
+			"nature": "Hasty",
 			"moves": [
 				"blizzard",
 				"gigadrain",
@@ -18356,11 +18429,9 @@
 				"protect"
 			],
 			"evs": {
-				"hp": 36,
-				"atk": 20,
-				"def": 196,
-				"spa": 100,
-				"spd": 116
+				"atk": 100,
+				"spa": 180,
+				"spe": 196
 			}
 		}
 	],
@@ -18974,22 +19045,18 @@
 	[
 		"stunky",
 		{
-			"ability": "aftermath",
+			"ability": "stench",
 			"item": "eviolite",
-			"nature": "Timid",
+			"nature": "Jolly",
 			"moves": [
-				"nastyplot",
-				"darkpulse",
-				"sludgebomb",
-				"fireblast"
+				"knockoff",
+				"gunkshot",
+				"suckerpunch",
+				"playrough"
 			],
-			"ivs": {
-				"atk": 0
-			},
 			"evs": {
 				"hp": 12,
-				"spa": 188,
-				"spd": 28,
+				"atk": 252,
 				"spe": 244
 			}
 		}
@@ -19712,12 +19779,12 @@
 				"drainpunch",
 				"knockoff",
 				"machpunch",
-				"defog"
+				"icepunch"
 			],
 			"evs": {
 				"atk": 196,
 				"def": 156,
-				"spe": 156
+				"spd": 156
 			}
 		}
 	],
@@ -20043,19 +20110,19 @@
 	[
 		"torterra",
 		{
-			"ability": "overgrow",
-			"item": "leftovers",
-			"nature": "Impish",
+			"ability": "shellarmor",
+			"item": "loadeddice",
+			"nature": "Adamant",
 			"moves": [
-				"stealthrock",
-				"woodhammer",
-				"earthquake",
-				"synthesis"
+				"shellsmash",
+				"bulletseed",
+				"headlongrush",
+				"rockblast"
 			],
 			"evs": {
-				"hp": 248,
-				"def": 252,
-				"spd": 8
+				"atk": 252,
+				"spd": 4,
+				"spe": 252
 			}
 		}
 	],
@@ -20395,13 +20462,13 @@
 		"typhlosionhisui",
 		{
 			"ability": "frisk",
-			"item": "choicescarf",
+			"item": "heavydutyboots",
 			"nature": "Timid",
 			"moves": [
-				"eruption",
-				"flamethrower",
-				"shadowball",
-				"focusblast"
+				"fireblast",
+				"willowisp",
+				"infernalparade",
+				"shadowball"
 			],
 			"ivs": {
 				"atk": 0
@@ -20559,6 +20626,25 @@
 				"hp": 116,
 				"atk": 252,
 				"spe": 140
+			}
+		}
+	],
+	[
+		"ursalunabloodmoon",
+		{
+			"ability": "mindseye",
+			"item": "leftovers",
+			"nature": "Modest",
+			"moves": [
+				"calmmind",
+				"bloodmoon",
+				"earthpower",
+				"vacuumwave"
+			],
+			"evs": {
+				"hp": 188,
+				"spa": 252,
+				"spe": 68
 			}
 		}
 	],
@@ -21218,8 +21304,8 @@
 			"moves": [
 				"voltswitch",
 				"gigadrain",
-				"terablast",
-				"protect"
+				"thunderbolt",
+				"terablast"
 			],
 			"ivs": {
 				"atk": 0
@@ -21255,13 +21341,13 @@
 		"vullaby",
 		{
 			"ability": "weakarmor",
-			"item": "berryjuice",
-			"nature": "Adamant",
+			"item": "eviolite",
+			"nature": "Jolly",
 			"moves": [
 				"bravebird",
 				"knockoff",
 				"uturn",
-				"defog"
+				"roost"
 			],
 			"evs": {
 				"atk": 236,
@@ -21471,19 +21557,22 @@
 	[
 		"weezinggalar",
 		{
-			"ability": "levitate",
-			"item": "blacksludge",
+			"ability": "neutralizinggas",
+			"item": "heavydutyboots",
 			"nature": "Bold",
 			"moves": [
-				"sludgebomb",
 				"strangesteam",
 				"defog",
-				"willowisp"
+				"willowisp",
+				"taunt"
 			],
+			"ivs": {
+				"atk": 0
+			},
 			"evs": {
 				"hp": 252,
-				"def": 252,
-				"spd": 4
+				"def": 80,
+				"spe": 176
 			}
 		}
 	],
@@ -22037,12 +22126,12 @@
 		"zamazenta",
 		{
 			"ability": "dauntlessshield",
-			"item": "choiceband",
+			"item": "heavydutyboots",
 			"nature": "Jolly",
 			"moves": [
 				"closecombat",
-				"crunch",
 				"heavyslam",
+				"crunch",
 				"stoneedge"
 			],
 			"evs": {

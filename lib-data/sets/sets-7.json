@@ -9858,18 +9858,18 @@
 		"munchlax",
 		{
 			"ability": "thickfat",
-			"item": "eviolite",
-			"nature": "Careful",
+			"item": "berryjuice",
+			"nature": "Adamant",
 			"moves": [
-				"toxic",
+				"return",
 				"earthquake",
-				"rest",
-				"sleeptalk"
+				"pursuit",
+				"recycle"
 			],
 			"evs": {
-				"hp": 4,
-				"def": 252,
-				"spd": 252
+				"atk": 236,
+				"def": 36,
+				"spd": 236
 			}
 		}
 	],
@@ -10047,8 +10047,9 @@
 				"stoneedge"
 			],
 			"evs": {
-				"atk": 224,
-				"def": 32,
+				"hp": 28,
+				"atk": 220,
+				"def": 8,
 				"spe": 252
 			}
 		}

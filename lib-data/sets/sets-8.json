@@ -424,15 +424,15 @@
 			"item": "leftovers",
 			"nature": "Naive",
 			"moves": [
-				"substitute",
 				"boltbeak",
 				"blizzard",
-				"lowkick"
+				"lowkick",
+				"substitute"
 			],
 			"evs": {
-				"atk": 252,
-				"spa": 4,
-				"spe": 252
+				"atk": 208,
+				"spa": 76,
+				"spe": 224
 			}
 		}
 	],
@@ -696,7 +696,7 @@
 				"liquidation",
 				"closecombat",
 				"flipturn",
-				"aquajet"
+				"crunch"
 			],
 			"evs": {
 				"atk": 252,
@@ -1581,12 +1581,12 @@
 		"cloyster",
 		{
 			"ability": "skilllink",
-			"item": "lifeorb",
+			"item": "heavydutyboots",
 			"nature": "Naughty",
 			"moves": [
 				"shellsmash",
 				"iciclespear",
-				"pinmissile",
+				"rockblast",
 				"hydropump"
 			],
 			"evs": {
@@ -3369,8 +3369,8 @@
 			"moves": [
 				"swordsdance",
 				"earthquake",
-				"firefang",
-				"scaleshot"
+				"scaleshot",
+				"firefang"
 			],
 			"evs": {
 				"atk": 252,
@@ -3404,14 +3404,14 @@
 	[
 		"gastrodon",
 		{
-			"ability": "stickyhold",
-			"item": "heavydutyboots",
-			"nature": "Sassy",
+			"ability": "stormdrain",
+			"item": "leftovers",
+			"nature": "Calm",
 			"moves": [
 				"scald",
-				"earthquake",
+				"earthpower",
 				"recover",
-				"clearsmog"
+				"toxic"
 			],
 			"evs": {
 				"hp": 252,
@@ -6444,7 +6444,7 @@
 			"moves": [
 				"sludgewave",
 				"earthpower",
-				"thunderbolt",
+				"icebeam",
 				"flamethrower"
 			],
 			"evs": {
@@ -6527,8 +6527,8 @@
 				"painsplit"
 			],
 			"evs": {
-				"hp": 252,
-				"spa": 4,
+				"hp": 248,
+				"spa": 8,
 				"spe": 252
 			}
 		}
@@ -7131,20 +7131,19 @@
 	[
 		"polteageist",
 		{
-			"ability": "cursedbody",
-			"item": "whiteherb",
-			"nature": "Timid",
+			"ability": "weakarmor",
+			"item": "focussash",
+			"nature": "Modest",
 			"moves": [
 				"shellsmash",
 				"shadowball",
-				"strengthsap",
+				"storedpower",
 				"gigadrain"
 			],
 			"evs": {
-				"hp": 28,
-				"def": 32,
 				"spa": 252,
-				"spe": 196
+				"spd": 4,
+				"spe": 252
 			}
 		}
 	],
@@ -7532,6 +7531,25 @@
 				"spa": 252,
 				"spd": 4,
 				"spe": 252
+			}
+		}
+	],
+	[
+		"regigigas",
+		{
+			"ability": "slowstart",
+			"item": "leftovers",
+			"nature": "Careful",
+			"moves": [
+				"rest",
+				"sleeptalk",
+				"knockoff",
+				"bodyslam"
+			],
+			"evs": {
+				"hp": 252,
+				"def": 4,
+				"spd": 252
 			}
 		}
 	],
@@ -9970,15 +9988,15 @@
 			"item": "heavydutyboots",
 			"nature": "Timid",
 			"moves": [
-				"nastyplot",
 				"hurricane",
-				"focusblast",
-				"knockoff"
+				"knockoff",
+				"uturn",
+				"defog"
 			],
 			"evs": {
-				"hp": 4,
-				"spa": 252,
-				"spe": 252
+				"hp": 252,
+				"def": 88,
+				"spe": 168
 			}
 		}
 	],
