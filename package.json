@@ -36,7 +36,7 @@
     "lib-data/"
   ],
   "devDependencies": {
-    "@asanrom/ps-bot-lib": "1.0.1",
+    "@asanrom/ps-bot-lib": "1.0.2",
     "@types/chai": "4.3.6",
     "@types/mocha": "10.0.2",
     "@types/node": "20.8.2",
@@ -45,7 +45,7 @@
     "chai": "4.3.10",
     "dotenv": "16.3.1",
     "eslint": "8.50.0",
-    "mocha": "10.2.0",
+    "mocha": "11.1.0",
     "rimraf": "5.0.5",
     "ts-node": "10.9.1",
     "typedoc": "0.25.1",
