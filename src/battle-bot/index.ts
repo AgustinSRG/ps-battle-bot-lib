@@ -5,13 +5,13 @@
 import { Battle, BattleEvent } from "../battle-data";
 import { BattleDecision, BattleDecisionScenario } from "../battle-decision";
 import { EventEmitter } from "events";
-import { LAST_GEN, createBattle } from "../battle-helpers";
+import { createBattle } from "../battle-helpers";
 import { BattleBotBattleStatus } from "./battle-status";
 import { BattleBotConfigFunc, getFormatDetailsByBattleId } from "./config";
 import { CancellablePromise } from "../utils/cancellable-promise";
 import { clone } from "../utils";
 
-const DECISION_TIMEOUT = 2000;
+const DECISION_TIMEOUT = 1000;
 
 export * from "./config";
 export * from "./battle-status";
