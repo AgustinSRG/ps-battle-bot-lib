@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>ActiveDecision | @asanrom/ps-battle-bot-lib</title><meta name="description" content="Documentation for @asanrom/ps-battle-bot-lib"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>BattleBotOptions | @asanrom/ps-battle-bot-lib</title><meta name="description" content="Documentation for @asanrom/ps-battle-bot-lib"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base="..">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -13,18 +13,18 @@
 <div class="tsd-page-title">
 <ul class="tsd-breadcrumb">
 <li><a href="../modules.html">@asanrom/ps-battle-bot-lib</a></li>
-<li><a href="ActiveDecision.html">ActiveDecision</a></li></ul>
-<h1>Interface ActiveDecision</h1></div>
+<li><a href="BattleBotOptions.html">BattleBotOptions</a></li></ul>
+<h1>Interface BattleBotOptions</h1></div>
 <section class="tsd-panel tsd-comment">
-<div class="tsd-comment tsd-typography"><p>Active decision</p>
+<div class="tsd-comment tsd-typography"><p>Battle bot options</p>
 </div>
 <div class="tsd-comment tsd-typography"></div></section>
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
-<li><span class="target">ActiveDecision</span></li></ul></section><aside class="tsd-sources">
+<li><span class="target">BattleBotOptions</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/AgustinSRG/ps-battle-bot-lib/blob/fce99a3/src/battle-decision/active-decision.ts#L14">src/battle-decision/active-decision.ts:14</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/AgustinSRG/ps-battle-bot-lib/blob/fce99a3/src/battle-bot/index.ts#L57">src/battle-bot/index.ts:57</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -32,24 +32,20 @@
 <div class="tsd-accordion-details">
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Properties</h3>
-<div class="tsd-index-list"><a href="ActiveDecision.html#subDecisions" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>sub<wbr/>Decisions</span></a>
-<a href="ActiveDecision.html#type" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>type</span></a>
+<div class="tsd-index-list"><a href="BattleBotOptions.html#autoDecisionMaking" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>auto<wbr/>Decision<wbr/>Making?</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
-<section class="tsd-panel tsd-member"><a id="subDecisions" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>sub<wbr/>Decisions</span><a href="#subDecisions" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">sub<wbr/>Decisions</span><span class="tsd-signature-symbol">:</span> <a href="../types/ActiveSubDecision.html" class="tsd-signature-type tsd-kind-type-alias">ActiveSubDecision</a><span class="tsd-signature-symbol">[]</span></div>
-<div class="tsd-comment tsd-typography"><p>One sub decision for each active slot</p>
+<section class="tsd-panel tsd-member"><a id="autoDecisionMaking" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>auto<wbr/>Decision<wbr/>Making</span><a href="#autoDecisionMaking" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">auto<wbr/>Decision<wbr/>Making</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">boolean</span></div>
+<div class="tsd-comment tsd-typography"><p>Automatically makes decisions after receiving battle events
+Set it to false to manually call the makeDecision() method to get a decision
+Default: true</p>
 </div>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/AgustinSRG/ps-battle-bot-lib/blob/fce99a3/src/battle-decision/active-decision.ts#L20">src/battle-decision/active-decision.ts:20</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="type" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>type</span><a href="#type" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">type</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;active&quot;</span></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/AgustinSRG/ps-battle-bot-lib/blob/fce99a3/src/battle-decision/active-decision.ts#L15">src/battle-decision/active-decision.ts:15</a></li></ul></aside></section></section></div>
+<li>Defined in <a href="https://github.com/AgustinSRG/ps-battle-bot-lib/blob/fce99a3/src/battle-bot/index.ts#L63">src/battle-bot/index.ts:63</a></li></ul></aside></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -69,8 +65,7 @@
 <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="#icon-chevronDown"></use></svg>On This Page</h3></summary>
 <div class="tsd-accordion-details">
 <ul>
-<li><a href="#subDecisions" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>sub<wbr/>Decisions</span></a></li>
-<li><a href="#type" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>type</span></a></li></ul></div></details></div>
+<li><a href="#autoDecisionMaking" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>auto<wbr/>Decision<wbr/>Making</span></a></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1"></use></svg><span>@asanrom/ps-battle-bot-lib</span></a>
 <ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="..">
@@ -83,13 +78,13 @@
 <li><a href="../classes/RandomDecisionAlgorithm.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>RandomDecisionAlgorithm</a></li>
 <li><a href="../classes/TopDamageDecisionAlgorithm.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg>TopDamageDecisionAlgorithm</a></li>
 <li><a href="AbilityKnowledge.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg>AbilityKnowledge</a></li>
-<li><a href="ActiveDecision.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg>ActiveDecision</a></li>
+<li><a href="ActiveDecision.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg>ActiveDecision</a></li>
 <li><a href="Battle.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg>Battle</a></li>
 <li><a href="BattleActivePokemon.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg>BattleActivePokemon</a></li>
 <li><a href="BattleAnalyzer.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg>BattleAnalyzer</a></li>
 <li><a href="BattleBotBattleStatus.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg>BattleBotBattleStatus</a></li>
 <li><a href="BattleBotConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg>BattleBotConfig</a></li>
-<li><a href="BattleBotOptions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg>BattleBotOptions</a></li>
+<li><a href="BattleBotOptions.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg>BattleBotOptions</a></li>
 <li><a href="BattleDecisionScenario.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg>BattleDecisionScenario</a></li>
 <li><a href="BattleEffect.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg>BattleEffect</a></li>
 <li><a href="BattleEvent_AbilityReveal.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg>BattleEvent_AbilityReveal</a></li>
