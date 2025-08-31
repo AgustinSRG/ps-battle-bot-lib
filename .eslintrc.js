@@ -10,6 +10,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
   ],
   "rules": {
+    "@typescript-eslint/no-unsafe-declaration-merging": 0,
     "@typescript-eslint/no-var-requires": 0,
     "@typescript-eslint/explicit-module-boundary-types": 0,
     "@typescript-eslint/ban-types": 0,

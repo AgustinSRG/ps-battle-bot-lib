@@ -468,7 +468,7 @@ export function findDecisionTargets(battle: Battle, target: MoveTarget, activeSl
 
 
     // Target adjacent ally or self
-    if (target === "adjacentAllyOrSelf") {
+    if (target === "adjacentAllyOrSelf" && battle.status.gameType !== "singles") {
         const result: MoveSubDecisionTarget[] = [];
 
         for (const [playerIndex, player] of battle.players) {

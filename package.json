@@ -1,6 +1,6 @@
 {
   "name": "@asanrom/ps-battle-bot-lib",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "description": "Library for Pokemon Showdown Bots to be able to participate in battles.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -20,7 +20,8 @@
     "gendoc": "typedoc --out docs ./src"
   },
   "files": [
-    "dist/"
+    "dist/",
+    "lib-data/"
   ],
   "author": {
     "name": "Agustin San Roman",
@@ -35,24 +36,24 @@
     "lib-data/"
   ],
   "devDependencies": {
-    "@asanrom/ps-bot-lib": "1.0.0",
-    "@types/chai": "4.3.5",
-    "@types/mocha": "10.0.1",
-    "@types/node": "18.15.11",
-    "@typescript-eslint/eslint-plugin": "5.57.1",
-    "@typescript-eslint/parser": "5.57.1",
-    "chai": "4.3.8",
-    "dotenv": "16.0.3",
-    "eslint": "8.37.0",
-    "mocha": "10.2.0",
-    "rimraf": "4.4.1",
+    "@asanrom/ps-bot-lib": "1.0.3",
+    "@types/chai": "4.3.6",
+    "@types/mocha": "10.0.2",
+    "@types/node": "20.8.2",
+    "@typescript-eslint/eslint-plugin": "6.7.4",
+    "@typescript-eslint/parser": "6.7.4",
+    "chai": "4.3.10",
+    "dotenv": "16.3.1",
+    "eslint": "8.50.0",
+    "mocha": "11.1.0",
+    "rimraf": "5.0.5",
     "ts-node": "10.9.1",
-    "typedoc": "0.24.6",
-    "typescript": "5.0.3"
+    "typedoc": "0.25.1",
+    "typescript": "5.2.2"
   },
   "license": "MIT",
   "dependencies": {
     "@asanrom/javascript-object-sanitizer": "1.0.0",
-    "@asanrom/poke-calc": "0.7.2"
+    "@asanrom/poke-calc": "0.9.0"
   }
 }

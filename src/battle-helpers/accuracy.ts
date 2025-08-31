@@ -83,7 +83,7 @@ export function calcMoveAccuracy(battle: Battle, attackerPlayer: BattlePlayer, a
     }
 
     // Accuracy
-    
+
     if (compareIds(attacker.item.item, "Wide Lens") && itemIsEnabled(battle, attacker)) {
         accuracy = accuracy * 1.1;
     }
@@ -99,7 +99,12 @@ export function calcMoveAccuracy(battle: Battle, attackerPlayer: BattlePlayer, a
 
     // Evasion
 
-    if (!IgnoreEvasionMoves.has(toId(moveName)) && defender.boosts.has("evasion")) {
+    const hasAbilityThatIgnoresEvasion = (
+        (battle.status.gen >= 6 && compareIds(attacker.ability.ability, "Keen Eye"))
+        || compareIds(attacker.ability.ability, "Mind's Eye")
+    ) && abilityIsEnabled(battle, attacker);
+
+    if (!hasAbilityThatIgnoresEvasion && !IgnoreEvasionMoves.has(toId(moveName)) && defender.boosts.has("evasion")) {
         const multiplier = boostTable[((-1) * defender.boosts.get("evasion")) + 6] || 1;
         accuracy = accuracy * multiplier;
     }

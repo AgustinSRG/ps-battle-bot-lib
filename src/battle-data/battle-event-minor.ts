@@ -6,7 +6,7 @@ import { ObjectSchema } from "@asanrom/javascript-object-sanitizer";
 import { BattleEffect, BattleEffectSchema } from "./effect";
 import { PokemonIdentTarget, PokemonIdentTargetSchema } from "./ident";
 import { StatName, StatNameSchema } from "./stats";
-import { BOOLEAN_SCHEMA, NUMBER_SCHEMA, POSITIVE_INT_SCHEMA, STRING_SCHEMA } from "../utils/schemas";
+import { BOOLEAN_SCHEMA, POSITIVE_INT_SCHEMA, STRING_SCHEMA } from "../utils/schemas";
 import { PokemonCondition, PokemonConditionSchema, PokemonStatus, PokemonStatusSchema } from "./condition";
 
 /**
