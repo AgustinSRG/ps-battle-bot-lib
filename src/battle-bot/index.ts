@@ -52,9 +52,26 @@ export interface BattleBot {
 }
 
 /**
+ * Battle bot options
+ */
+export interface BattleBotOptions {
+    /**
+     * Automatically makes decisions after receiving battle events
+     * Set it to false to manually call the makeDecision() method to get a decision
+     * Default: true
+     */
+    autoDecisionMaking?: boolean;
+}
+
+/**
  * Battle bot
  */
 export class BattleBot extends EventEmitter {
+    /**
+     * Options for the battle bot
+     */
+    public options: BattleBotOptions;
+
     /**
      * Configuration function
      */
@@ -68,10 +85,12 @@ export class BattleBot extends EventEmitter {
     /**
      * Instantiates a battle bot
      * @param configFunc The configuration function
+     * @param options Options for the battle bot
      */
-    constructor(configFunc: BattleBotConfigFunc) {
+    constructor(configFunc: BattleBotConfigFunc, options?: BattleBotOptions) {
         super();
 
+        this.options = options || {};
         this.configFunc = configFunc;
         this.battles = new Map();
     }
@@ -186,7 +205,7 @@ export class BattleBot extends EventEmitter {
             battle.formatDetails.gameType = event.gameType;
         }
 
-        if (battle.playing) {
+        if (battle.playing && this.options.autoDecisionMaking !== false) {
             // Setup decision timeout
             battle.decisionTimeout = setTimeout(() => {
                 battle.decisionTimeout = null;
@@ -198,62 +217,76 @@ export class BattleBot extends EventEmitter {
     /**
      * Makes decision
      * @param battle The battle
+     * @returns The decision
      */
-    private makeDecisionInternal(battle: BattleBotBattleStatus) {
-        if (!battle.playing) {
-            return;
-        }
-
-        if (battle.decisionPromise) {
-            return; // Already deciding
-        }
-
-        battle.decisionPromise = new CancellablePromise(battle.decisionAlgorithm.decide({
-            battle: battle.battle,
-            analyzer: battle.analyzer,
-            battleLog: battle.log,
-            previousScenarios: battle.previousScenarios,
-        }));
-
-
-        battle.decisionPromise.then(decision => {
-            battle.decisionPromise = null;
-
-            const battleSnapshot = clone(battle.battle);
-
-            // Add battle scenario
-            if (battle.scenariosMaxKeep > 0) {
-                const scenario: BattleDecisionScenario = {
-                    battle: battleSnapshot,
-                    decision: decision,
-                };
-
-                battle.previousScenarios.push(scenario);
-
-                while (battle.previousScenarios.length > battle.scenariosMaxKeep) {
-                    battle.previousScenarios.shift();
-                }
+    private makeDecisionInternal(battle: BattleBotBattleStatus): Promise<BattleDecision | null> {
+        return new Promise<BattleDecision | null>((resolve, reject) => {
+            if (!battle.playing) {
+                resolve(null);
+                return;
             }
 
-            // Emit decision
-            this.emit("decision", battleSnapshot, decision);
-        });
+            if (battle.decisionPromise) {
+                resolve(null);
+                return; // Already deciding
+            }
 
-        battle.decisionPromise.catch(err => {
-            battle.decisionPromise = null;
-            this.emit("error", err);
+            battle.decisionPromise = new CancellablePromise(battle.decisionAlgorithm.decide({
+                battle: battle.battle,
+                analyzer: battle.analyzer,
+                battleLog: battle.log,
+                previousScenarios: battle.previousScenarios,
+            }));
+
+            battle.decisionPromise.onCancel(() => {
+                resolve(null);
+            });
+
+            battle.decisionPromise.then(decision => {
+                battle.decisionPromise = null;
+
+                const battleSnapshot = clone(battle.battle);
+
+                // Add battle scenario
+                if (battle.scenariosMaxKeep > 0) {
+                    const scenario: BattleDecisionScenario = {
+                        battle: battleSnapshot,
+                        decision: decision,
+                    };
+
+                    battle.previousScenarios.push(scenario);
+
+                    while (battle.previousScenarios.length > battle.scenariosMaxKeep) {
+                        battle.previousScenarios.shift();
+                    }
+                }
+
+                // Emit decision
+                this.emit("decision", battleSnapshot, decision);
+
+                resolve(decision);
+            });
+
+            battle.decisionPromise.catch(err => {
+                battle.decisionPromise = null;
+
+                this.emit("error", err);
+
+                reject(err);
+            });
         });
     }
 
     /**
      * Makes decision
      * @param id The battle ID
+     * @returns The decision
      */
-    public makeDecision(id: string) {
+    public makeDecision(id: string): Promise<BattleDecision | null> {
         const battle = this.battles.get(id);
 
         if (!battle || !battle.playing) {
-            return;
+            return null;
         }
 
         if (battle.decisionTimeout) {
@@ -261,6 +294,6 @@ export class BattleBot extends EventEmitter {
             battle.decisionTimeout = null;
         }
 
-        this.makeDecisionInternal(battle);
+        return this.makeDecisionInternal(battle);
     }
 }
