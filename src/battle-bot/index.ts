@@ -111,6 +111,19 @@ export class BattleBot extends EventEmitter {
     }
 
     /**
+     * Gets a battle
+     * @param id The battle ID
+     * @returns The battle, or null
+     */
+    public getBattle(id: string): Battle | null {
+        if (!this.battles.has(id)) {
+            return null;
+        }
+
+        return this.battles.get(id).battle;
+    }
+
+    /**
      * Removes a battle
      * @param id battle id
      */
@@ -153,6 +166,32 @@ export class BattleBot extends EventEmitter {
             return;
         }
 
+        this.addBattleEventInternal(id, battle, event);
+    }
+
+    /**
+     * Adds battle events
+     * @param id The battle ID
+     * @param events The events
+     */
+    public addBattleEvents(id: string, events: BattleEvent[]) {
+        const battle = this.battles.get(id);
+
+        if (!battle) {
+            return;
+        }
+
+        for (const event of events) {
+            this.addBattleEventInternal(id, battle, event);
+        }
+    }
+
+    /**
+     * Adds battle event
+     * @param id The battle ID
+     * @param event The event
+     */
+    private addBattleEventInternal(id: string, battle: BattleBotBattleStatus, event: BattleEvent) {
         if (battle.analyzer) {
             // Analyze event
             battle.analyzer.nextEvent(event);
