@@ -246,6 +246,9 @@ export class BattleBot extends EventEmitter {
 
         if (battle.playing && this.options.autoDecisionMaking !== false) {
             // Setup decision timeout
+            if (battle.decisionTimeout) {
+                clearTimeout(battle.decisionTimeout);
+            }
             battle.decisionTimeout = setTimeout(() => {
                 battle.decisionTimeout = null;
                 this.makeDecisionInternal(battle);
