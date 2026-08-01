@@ -1,5 +1,17 @@
 [
 	[
+		"ivysaur",
+		{
+			"item": "leftovers",
+			"moves": [
+				"sleeppowder",
+				"swordsdance",
+				"return",
+				"gigadrain"
+			]
+		}
+	],
+	[
 		"venusaur",
 		{
 			"item": "leftovers",
@@ -8,6 +20,18 @@
 				"leechseed",
 				"razorleaf",
 				"sleeppowder"
+			]
+		}
+	],
+	[
+		"charmeleon",
+		{
+			"item": "leftovers",
+			"moves": [
+				"bellydrum",
+				"return",
+				"rockslide",
+				"fireblast"
 			]
 		}
 	],
@@ -138,10 +162,10 @@
 		{
 			"item": "leftovers",
 			"moves": [
-				"thunderwave",
-				"encore",
+				"curse",
+				"return",
 				"moonlight",
-				"seismictoss"
+				"thunderwave"
 			]
 		}
 	],
@@ -281,6 +305,18 @@
 		}
 	],
 	[
+		"bayleef",
+		{
+			"item": "leftovers",
+			"moves": [
+				"synthesis",
+				"curse",
+				"bodyslam",
+				"razorleaf"
+			]
+		}
+	],
+	[
 		"meganium",
 		{
 			"item": "leftovers",
@@ -290,6 +326,22 @@
 				"leechseed",
 				"synthesis"
 			]
+		}
+	],
+	[
+		"quilava",
+		{
+			"item": "leftovers",
+			"moves": [
+				"fireblast",
+				"hiddenpowerelectric",
+				"rest",
+				"sleeptalk"
+			],
+			"ivs": {
+				"hp": 14,
+				"atk": 28
+			}
 		}
 	],
 	[
@@ -307,6 +359,18 @@
 				"atk": 28,
 				"def": 28
 			}
+		}
+	],
+	[
+		"croconaw",
+		{
+			"item": "leftovers",
+			"moves": [
+				"surf",
+				"rockslide",
+				"rest",
+				"sleeptalk"
+			]
 		}
 	],
 	[
@@ -387,6 +451,18 @@
 		}
 	],
 	[
+		"snubbull",
+		{
+			"item": "leftovers",
+			"moves": [
+				"return",
+				"healbell",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
 		"granbull",
 		{
 			"item": "leftovers",
@@ -417,23 +493,6 @@
 			"moves": [
 				"highjumpkick",
 				"return",
-				"counter",
-				"hiddenpowerghost"
-			],
-			"ivs": {
-				"hp": 22,
-				"atk": 26,
-				"def": 28
-			}
-		}
-	],
-	[
-		"hitmontop",
-		{
-			"item": "leftovers",
-			"moves": [
-				"highjumpkick",
-				"curse",
 				"counter",
 				"hiddenpowerghost"
 			],
@@ -574,10 +633,10 @@
 		{
 			"item": "leftovers",
 			"moves": [
-				"curse",
+				"fireblast",
 				"rockslide",
-				"earthquake",
-				"fireblast"
+				"curse",
+				"protect"
 			]
 		}
 	],
@@ -655,6 +714,23 @@
 		}
 	],
 	[
+		"koffing",
+		{
+			"item": "leftovers",
+			"moves": [
+				"sludgebomb",
+				"thunder",
+				"hiddenpowerwater",
+				"explosion"
+			],
+			"ivs": {
+				"hp": 14,
+				"atk": 28,
+				"def": 26
+			}
+		}
+	],
+	[
 		"weezing",
 		{
 			"item": "leftovers",
@@ -691,6 +767,22 @@
 		}
 	],
 	[
+		"sandshrew",
+		{
+			"item": "leftovers",
+			"moves": [
+				"swordsdance",
+				"earthquake",
+				"rockslide",
+				"hiddenpowerbug"
+			],
+			"ivs": {
+				"atk": 26,
+				"def": 26
+			}
+		}
+	],
+	[
 		"sandslash",
 		{
 			"item": "leftovers",
@@ -699,6 +791,29 @@
 				"earthquake",
 				"rockslide",
 				"substitute"
+			]
+		}
+	],
+	[
+		"nidorina",
+		{
+			"item": "leftovers",
+			"moves": [
+				"curse",
+				"return",
+				"icebeam",
+				"moonlight"
+			]
+		}
+	],
+	[
+		"nidorino",
+		{
+			"moves": [
+				"thunder",
+				"icebeam",
+				"morningsun",
+				"thief"
 			]
 		}
 	],
@@ -731,9 +846,9 @@
 		{
 			"item": "leftovers",
 			"moves": [
-				"stunspore",
-				"curse",
+				"swordsdance",
 				"sludgebomb",
+				"stunspore",
 				"moonlight"
 			]
 		}
@@ -759,15 +874,34 @@
 		{
 			"item": "leftovers",
 			"moves": [
-				"curse",
-				"sludgebomb",
+				"sleeppowder",
 				"stunspore",
-				"hiddenpowerbug"
-			],
-			"ivs": {
-				"atk": 26,
-				"def": 26
-			}
+				"psychic",
+				"sludgebomb"
+			]
+		}
+	],
+	[
+		"diglett",
+		{
+			"item": "leftovers",
+			"moves": [
+				"earthquake",
+				"rockslide",
+				"sludgebomb",
+				"substitute"
+			]
+		}
+	],
+	[
+		"meowth",
+		{
+			"moves": [
+				"doubleedge",
+				"hypnosis",
+				"thief",
+				"thunder"
+			]
 		}
 	],
 	[
@@ -792,6 +926,22 @@
 				"surf",
 				"icebeam"
 			]
+		}
+	],
+	[
+		"mankey",
+		{
+			"item": "leftovers",
+			"moves": [
+				"meditate",
+				"crosschop",
+				"rockslide",
+				"hiddenpowerground"
+			],
+			"ivs": {
+				"hp": 14,
+				"atk": 24
+			}
 		}
 	],
 	[
@@ -888,6 +1038,34 @@
 		}
 	],
 	[
+		"weepinbell",
+		{
+			"item": "leftovers",
+			"moves": [
+				"sleeppowder",
+				"swordsdance",
+				"sludgebomb",
+				"hiddenpowerground"
+			],
+			"ivs": {
+				"hp": 14,
+				"atk": 24
+			}
+		}
+	],
+	[
+		"tentacool",
+		{
+			"item": "leftovers",
+			"moves": [
+				"hydropump",
+				"sludgebomb",
+				"rapidspin",
+				"protect"
+			]
+		}
+	],
+	[
 		"tentacruel",
 		{
 			"item": "leftovers",
@@ -935,8 +1113,20 @@
 			"moves": [
 				"fireblast",
 				"doubleedge",
-				"hypnosis",
-				"substitute"
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"slowpoke",
+		{
+			"item": "leftovers",
+			"moves": [
+				"psychic",
+				"thunderwave",
+				"rest",
+				"sleeptalk"
 			]
 		}
 	],
@@ -985,6 +1175,23 @@
 		}
 	],
 	[
+		"doduo",
+		{
+			"item": "polkadotbow",
+			"moves": [
+				"doubleedge",
+				"drillpeck",
+				"quickattack",
+				"hiddenpowerwater"
+			],
+			"ivs": {
+				"hp": 14,
+				"atk": 28,
+				"def": 26
+			}
+		}
+	],
+	[
 		"dewgong",
 		{
 			"item": "leftovers",
@@ -997,6 +1204,18 @@
 		}
 	],
 	[
+		"grimer",
+		{
+			"item": "leftovers",
+			"moves": [
+				"curse",
+				"sludgebomb",
+				"gigadrain",
+				"explosion"
+			]
+		}
+	],
+	[
 		"muk",
 		{
 			"item": "leftovers",
@@ -1005,6 +1224,18 @@
 				"fireblast",
 				"explosion",
 				"curse"
+			]
+		}
+	],
+	[
+		"shellder",
+		{
+			"item": "miracleberry",
+			"moves": [
+				"surf",
+				"icywind",
+				"explosion",
+				"clamp"
 			]
 		}
 	],
@@ -1045,6 +1276,17 @@
 		}
 	],
 	[
+		"onix",
+		{
+			"moves": [
+				"rockslide",
+				"earthquake",
+				"explosion",
+				"roar"
+			]
+		}
+	],
+	[
 		"drowzee",
 		{
 			"item": "leftovers",
@@ -1073,11 +1315,15 @@
 		{
 			"item": "leftovers",
 			"moves": [
-				"frustration",
 				"swordsdance",
-				"rest",
-				"sleeptalk"
-			]
+				"return",
+				"hiddenpowerground",
+				"substitute"
+			],
+			"ivs": {
+				"hp": 14,
+				"atk": 24
+			}
 		}
 	],
 	[
@@ -1154,10 +1400,10 @@
 		{
 			"item": "leftovers",
 			"moves": [
-				"roar",
+				"curse",
 				"earthquake",
 				"rockslide",
-				"protect"
+				"roar"
 			]
 		}
 	],
@@ -1215,14 +1461,26 @@
 			"item": "leftovers",
 			"moves": [
 				"hydropump",
-				"icebeam",
 				"hiddenpowerelectric",
-				"haze"
+				"rest",
+				"sleeptalk"
 			],
 			"ivs": {
 				"hp": 14,
 				"atk": 28
 			}
+		}
+	],
+	[
+		"goldeen",
+		{
+			"item": "leftovers",
+			"moves": [
+				"swordsdance",
+				"return",
+				"rest",
+				"sleeptalk"
+			]
 		}
 	],
 	[
@@ -1239,6 +1497,18 @@
 				"hp": 14,
 				"atk": 24
 			}
+		}
+	],
+	[
+		"staryu",
+		{
+			"item": "leftovers",
+			"moves": [
+				"thunderwave",
+				"recover",
+				"surf",
+				"thunderbolt"
+			]
 		}
 	],
 	[
@@ -1261,7 +1531,7 @@
 				"swordsdance",
 				"wingattack",
 				"hiddenpowerground",
-				"batonpass"
+				"doubleedge"
 			],
 			"ivs": {
 				"hp": 14,
@@ -1311,9 +1581,9 @@
 			"item": "leftovers",
 			"moves": [
 				"swordsdance",
+				"return",
 				"hiddenpowerground",
-				"doubleedge",
-				"submission"
+				"rockthrow"
 			],
 			"ivs": {
 				"hp": 14,
@@ -1338,14 +1608,15 @@
 		{
 			"item": "leftovers",
 			"moves": [
+				"hiddenpowerflying",
 				"hydropump",
 				"thunder",
-				"doubleedge",
-				"hiddenpowerground"
+				"doubleedge"
 			],
 			"ivs": {
 				"hp": 14,
-				"atk": 24
+				"atk": 24,
+				"def": 26
 			}
 		}
 	],
@@ -1404,15 +1675,14 @@
 		{
 			"item": "leftovers",
 			"moves": [
-				"fireblast",
-				"shadowball",
-				"return",
-				"hiddenpowerrock"
+				"growth",
+				"flamethrower",
+				"hiddenpowerelectric",
+				"batonpass"
 			],
 			"ivs": {
-				"hp": 22,
-				"atk": 26,
-				"def": 24
+				"hp": 14,
+				"atk": 28
 			}
 		}
 	],
@@ -1421,10 +1691,22 @@
 		{
 			"item": "leftovers",
 			"moves": [
-				"thunder",
-				"icebeam",
+				"curse",
+				"doubleedge",
 				"thunderwave",
 				"recover"
+			]
+		}
+	],
+	[
+		"omanyte",
+		{
+			"item": "miracleberry",
+			"moves": [
+				"surf",
+				"icebeam",
+				"thief",
+				"rest"
 			]
 		}
 	],
@@ -1483,6 +1765,23 @@
 				"earthquake",
 				"rest"
 			]
+		}
+	],
+	[
+		"dratini",
+		{
+			"item": "leftovers",
+			"moves": [
+				"thunderbolt",
+				"icebeam",
+				"thunderwave",
+				"hiddenpowerrock"
+			],
+			"ivs": {
+				"hp": 22,
+				"atk": 26,
+				"def": 24
+			}
 		}
 	],
 	[
@@ -1593,15 +1892,46 @@
 		}
 	],
 	[
+		"natu",
+		{
+			"item": "twistedspoon",
+			"moves": [
+				"psychic",
+				"steelwing",
+				"gigadrain",
+				"nightmare"
+			]
+		}
+	],
+	[
 		"xatu",
 		{
 			"item": "leftovers",
 			"moves": [
 				"psychic",
-				"drillpeck",
+				"hiddenpowerelectric",
 				"rest",
 				"sleeptalk"
-			]
+			],
+			"ivs": {
+				"hp": 14,
+				"atk": 28
+			}
+		}
+	],
+	[
+		"mareep",
+		{
+			"item": "mintberry",
+			"moves": [
+				"thunderbolt",
+				"hiddenpowerice",
+				"thunderwave",
+				"rest"
+			],
+			"ivs": {
+				"def": 26
+			}
 		}
 	],
 	[
@@ -1648,10 +1978,10 @@
 		{
 			"item": "leftovers",
 			"moves": [
-				"agility",
-				"batonpass",
+				"curse",
 				"return",
-				"counter"
+				"rest",
+				"sleeptalk"
 			]
 		}
 	],
@@ -1662,12 +1992,10 @@
 			"moves": [
 				"growth",
 				"razorleaf",
-				"hiddenpowerwater",
+				"hiddenpowerice",
 				"synthesis"
 			],
 			"ivs": {
-				"hp": 14,
-				"atk": 28,
 				"def": 26
 			}
 		}
@@ -1739,10 +2067,10 @@
 		{
 			"item": "leftovers",
 			"moves": [
-				"drillpeck",
-				"feintattack",
 				"pursuit",
-				"nightshade"
+				"drillpeck",
+				"hiddenpowerdark",
+				"haze"
 			]
 		}
 	],
@@ -1786,9 +2114,9 @@
 		{
 			"item": "leftovers",
 			"moves": [
-				"batonpass",
-				"amnesia",
+				"earthquake",
 				"thunder",
+				"return",
 				"psychic"
 			]
 		}
@@ -1911,6 +2239,18 @@
 		}
 	],
 	[
+		"teddiursa",
+		{
+			"item": "leftovers",
+			"moves": [
+				"return",
+				"earthquake",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
 		"ursaring",
 		{
 			"item": "leftovers",
@@ -1953,18 +2293,12 @@
 	[
 		"delibird",
 		{
-			"item": "leftovers",
 			"moves": [
-				"spikes",
 				"icebeam",
 				"toxic",
-				"hiddenpowerflying"
-			],
-			"ivs": {
-				"hp": 14,
-				"atk": 24,
-				"def": 26
-			}
+				"thief",
+				"spikes"
+			]
 		}
 	],
 	[
@@ -2063,14 +2397,42 @@
 		}
 	],
 	[
-		"elekid",
+		"smoochum",
 		{
 			"moves": [
-				"thunder",
-				"icepunch",
 				"psychic",
+				"icebeam",
+				"shadowball",
 				"thief"
 			]
+		}
+	],
+	[
+		"elekid",
+		{
+			"item": "leftovers",
+			"moves": [
+				"thunder",
+				"psychic",
+				"rest",
+				"sleeptalk"
+			]
+		}
+	],
+	[
+		"magby",
+		{
+			"moves": [
+				"fireblast",
+				"thunderpunch",
+				"hiddenpowerwater",
+				"thief"
+			],
+			"ivs": {
+				"hp": 14,
+				"atk": 28,
+				"def": 26
+			}
 		}
 	],
 	[
@@ -2158,38 +2520,55 @@
 		}
 	],
 	[
-		"tentacool",
+		"machop",
 		{
 			"item": "leftovers",
 			"moves": [
-				"toxic",
-				"hydropump",
-				"rapidspin",
-				"sludgebomb"
+				"crosschop",
+				"rest",
+				"sleeptalk",
+				"earthquake"
 			]
 		}
 	],
 	[
-		"bayleef",
+		"wartortle",
 		{
 			"item": "leftovers",
 			"moves": [
-				"synthesis",
-				"razorleaf",
-				"lightscreen",
-				"leechseed"
+				"surf",
+				"zapcannon",
+				"rest",
+				"sleeptalk"
 			]
 		}
 	],
 	[
-		"slowpoke",
+		"geodude",
 		{
 			"item": "leftovers",
 			"moves": [
+				"curse",
 				"earthquake",
-				"thunderwave",
+				"hiddenpowerrock",
+				"rapidspin"
+			],
+			"ivs": {
+				"hp": 22,
+				"atk": 26,
+				"def": 24
+			}
+		}
+	],
+	[
+		"krabby",
+		{
+			"item": "miracleberry",
+			"moves": [
 				"return",
-				"curse"
+				"substitute",
+				"swordsdance",
+				"surf"
 			]
 		}
 	]

@@ -11,6 +11,28 @@
 		}
 	],
 	[
+		"charmander",
+		{
+			"moves": [
+				"fireblast",
+				"bodyslam",
+				"counter",
+				"substitute"
+			]
+		}
+	],
+	[
+		"charmeleon",
+		{
+			"moves": [
+				"fireblast",
+				"slash",
+				"bodyslam",
+				"counter"
+			]
+		}
+	],
+	[
 		"charizard",
 		{
 			"moves": [
@@ -22,13 +44,33 @@
 		}
 	],
 	[
-		"blastoise",
+		"squirtle",
 		{
 			"moves": [
 				"surf",
 				"blizzard",
-				"earthquake",
-				"rest"
+				"bodyslam",
+				"counter"
+			]
+		}
+	],
+	[
+		"blastoise",
+		{
+			"moves": [
+				"surf",
+				"bodyslam",
+				"seismictoss",
+				"blizzard"
+			]
+		}
+	],
+	[
+		"caterpie",
+		{
+			"moves": [
+				"stringshot",
+				"tackle"
 			]
 		}
 	],
@@ -39,7 +81,16 @@
 				"sleeppowder",
 				"stunspore",
 				"psychic",
-				"megadrain"
+				"substitute"
+			]
+		}
+	],
+	[
+		"weedle",
+		{
+			"moves": [
+				"stringshot",
+				"poisonsting"
 			]
 		}
 	],
@@ -47,10 +98,21 @@
 		"beedrill",
 		{
 			"moves": [
-				"agility",
 				"swordsdance",
-				"twineedle",
-				"hyperbeam"
+				"hyperbeam",
+				"agility",
+				"twineedle"
+			]
+		}
+	],
+	[
+		"pidgey",
+		{
+			"moves": [
+				"doubleedge",
+				"quickattack",
+				"wingattack",
+				"mirrormove"
 			]
 		}
 	],
@@ -60,8 +122,19 @@
 			"moves": [
 				"doubleedge",
 				"hyperbeam",
-				"skyattack",
-				"agility"
+				"agility",
+				"sandattack"
+			]
+		}
+	],
+	[
+		"rattata",
+		{
+			"moves": [
+				"bodyslam",
+				"quickattack",
+				"blizzard",
+				"superfang"
 			]
 		}
 	],
@@ -77,13 +150,35 @@
 		}
 	],
 	[
+		"spearow",
+		{
+			"moves": [
+				"doubleedge",
+				"drillpeck",
+				"mirrormove",
+				"agility"
+			]
+		}
+	],
+	[
 		"fearow",
 		{
 			"moves": [
-				"hyperbeam",
 				"doubleedge",
+				"hyperbeam",
 				"drillpeck",
 				"agility"
+			]
+		}
+	],
+	[
+		"ekans",
+		{
+			"moves": [
+				"glare",
+				"bodyslam",
+				"rockslide",
+				"earthquake"
 			]
 		}
 	],
@@ -99,6 +194,17 @@
 		}
 	],
 	[
+		"pikachu",
+		{
+			"moves": [
+				"thunderbolt",
+				"surf",
+				"quickattack",
+				"thunderwave"
+			]
+		}
+	],
+	[
 		"raichu",
 		{
 			"moves": [
@@ -106,6 +212,17 @@
 				"thunderwave",
 				"submission",
 				"surf"
+			]
+		}
+	],
+	[
+		"sandshrew",
+		{
+			"moves": [
+				"earthquake",
+				"bodyslam",
+				"substitute",
+				"slash"
 			]
 		}
 	],
@@ -121,13 +238,35 @@
 		}
 	],
 	[
+		"nidoranf",
+		{
+			"moves": [
+				"bodyslam",
+				"doublekick",
+				"blizzard",
+				"thunderbolt"
+			]
+		}
+	],
+	[
 		"nidoqueen",
 		{
 			"moves": [
 				"earthquake",
 				"thunderbolt",
-				"rockslide",
+				"fireblast",
 				"blizzard"
+			]
+		}
+	],
+	[
+		"nidoranm",
+		{
+			"moves": [
+				"bodyslam",
+				"doublekick",
+				"blizzard",
+				"thunderbolt"
 			]
 		}
 	],
@@ -135,10 +274,21 @@
 		"nidoking",
 		{
 			"moves": [
-				"thunderbolt",
-				"blizzard",
 				"earthquake",
-				"bodyslam"
+				"blizzard",
+				"thunderbolt",
+				"rockslide"
+			]
+		}
+	],
+	[
+		"clefairy",
+		{
+			"moves": [
+				"bodyslam",
+				"blizzard",
+				"thunderbolt",
+				"thunderwave"
 			]
 		}
 	],
@@ -154,13 +304,35 @@
 		}
 	],
 	[
+		"vulpix",
+		{
+			"moves": [
+				"fireblast",
+				"bodyslam",
+				"confuseray",
+				"substitute"
+			]
+		}
+	],
+	[
 		"ninetales",
 		{
 			"moves": [
 				"fireblast",
-				"firespin",
 				"bodyslam",
-				"confuseray"
+				"hyperbeam",
+				"quickattack"
+			]
+		}
+	],
+	[
+		"jigglypuff",
+		{
+			"moves": [
+				"bodyslam",
+				"thunderwave",
+				"blizzard",
+				"thunderbolt"
 			]
 		}
 	],
@@ -170,8 +342,19 @@
 			"moves": [
 				"thunderwave",
 				"hyperbeam",
-				"seismictoss",
+				"blizzard",
 				"bodyslam"
+			]
+		}
+	],
+	[
+		"zubat",
+		{
+			"moves": [
+				"confuseray",
+				"doubleedge",
+				"megadrain",
+				"leechlife"
 			]
 		}
 	],
@@ -179,9 +362,9 @@
 		"golbat",
 		{
 			"moves": [
-				"confuseray",
-				"screech",
 				"doubleedge",
+				"hyperbeam",
+				"screech",
 				"megadrain"
 			]
 		}
@@ -192,7 +375,7 @@
 			"moves": [
 				"sleeppowder",
 				"stunspore",
-				"swordsdance",
+				"bodyslam",
 				"hyperbeam"
 			]
 		}
@@ -203,8 +386,8 @@
 			"moves": [
 				"spore",
 				"stunspore",
-				"swordsdance",
-				"hyperbeam"
+				"slash",
+				"substitute"
 			]
 		}
 	],
@@ -220,6 +403,22 @@
 		}
 	],
 	[
+		"diglett",
+		{
+			"moves": [
+				"earthquake",
+				"rockslide",
+				"bodyslam",
+				"substitute"
+			],
+			"ivs": {
+				"hp": 6,
+				"atk": 28,
+				"def": 28
+			}
+		}
+	],
+	[
 		"dugtrio",
 		{
 			"moves": [
@@ -231,13 +430,35 @@
 		}
 	],
 	[
+		"meowth",
+		{
+			"moves": [
+				"slash",
+				"bodyslam",
+				"thunderbolt",
+				"bubblebeam"
+			]
+		}
+	],
+	[
 		"persian",
 		{
 			"moves": [
 				"slash",
-				"hyperbeam",
+				"bodyslam",
 				"bubblebeam",
 				"thunderbolt"
+			]
+		}
+	],
+	[
+		"psyduck",
+		{
+			"moves": [
+				"amnesia",
+				"surf",
+				"blizzard",
+				"bodyslam"
 			]
 		}
 	],
@@ -246,9 +467,20 @@
 		{
 			"moves": [
 				"amnesia",
-				"hydropump",
+				"surf",
 				"blizzard",
-				"rest"
+				"counter"
+			]
+		}
+	],
+	[
+		"mankey",
+		{
+			"moves": [
+				"submission",
+				"rockslide",
+				"thunderbolt",
+				"bodyslam"
 			]
 		}
 	],
@@ -256,10 +488,21 @@
 		"primeape",
 		{
 			"moves": [
-				"submission",
 				"bodyslam",
+				"hyperbeam",
 				"rockslide",
-				"hyperbeam"
+				"submission"
+			]
+		}
+	],
+	[
+		"growlithe",
+		{
+			"moves": [
+				"agility",
+				"bodyslam",
+				"fireblast",
+				"doubleedge"
 			]
 		}
 	],
@@ -267,21 +510,10 @@
 		"arcanine",
 		{
 			"moves": [
-				"agility",
+				"fireblast",
 				"bodyslam",
 				"hyperbeam",
-				"fireblast"
-			]
-		}
-	],
-	[
-		"poliwag",
-		{
-			"moves": [
-				"hypnosis",
-				"amnesia",
-				"hydropump",
-				"psychic"
+				"agility"
 			]
 		}
 	],
@@ -313,8 +545,8 @@
 			"moves": [
 				"psychic",
 				"thunderwave",
-				"seismictoss",
-				"counter"
+				"substitute",
+				"seismictoss"
 			]
 		}
 	],
@@ -322,8 +554,8 @@
 		"kadabra",
 		{
 			"moves": [
-				"psychic",
 				"thunderwave",
+				"psychic",
 				"seismictoss",
 				"recover"
 			]
@@ -341,6 +573,17 @@
 		}
 	],
 	[
+		"machop",
+		{
+			"moves": [
+				"submission",
+				"earthquake",
+				"rockslide",
+				"bodyslam"
+			]
+		}
+	],
+	[
 		"machamp",
 		{
 			"moves": [
@@ -348,17 +591,6 @@
 				"bodyslam",
 				"hyperbeam",
 				"earthquake"
-			]
-		}
-	],
-	[
-		"weepinbell",
-		{
-			"moves": [
-				"sleeppowder",
-				"stunspore",
-				"wrap",
-				"razorleaf"
 			]
 		}
 	],
@@ -374,13 +606,35 @@
 		}
 	],
 	[
+		"tentacool",
+		{
+			"moves": [
+				"surf",
+				"blizzard",
+				"megadrain",
+				"hydropump"
+			]
+		}
+	],
+	[
 		"tentacruel",
 		{
 			"moves": [
-				"wrap",
+				"swordsdance",
+				"hyperbeam",
 				"surf",
-				"blizzard",
-				"rest"
+				"blizzard"
+			]
+		}
+	],
+	[
+		"geodude",
+		{
+			"moves": [
+				"earthquake",
+				"rockslide",
+				"bodyslam",
+				"explosion"
 			]
 		}
 	],
@@ -390,7 +644,7 @@
 			"moves": [
 				"earthquake",
 				"rockslide",
-				"counter",
+				"substitute",
 				"explosion"
 			]
 		}
@@ -407,13 +661,24 @@
 		}
 	],
 	[
+		"ponyta",
+		{
+			"moves": [
+				"agility",
+				"fireblast",
+				"bodyslam",
+				"stomp"
+			]
+		}
+	],
+	[
 		"rapidash",
 		{
 			"moves": [
 				"fireblast",
-				"firespin",
+				"bodyslam",
 				"hyperbeam",
-				"bodyslam"
+				"agility"
 			]
 		}
 	],
@@ -421,10 +686,10 @@
 		"slowpoke",
 		{
 			"moves": [
-				"amnesia",
-				"surf",
-				"thunderwave",
-				"rest"
+				"blizzard",
+				"psychic",
+				"earthquake",
+				"thunderwave"
 			]
 		}
 	],
@@ -440,12 +705,23 @@
 		}
 	],
 	[
-		"magneton",
+		"magnemite",
 		{
 			"moves": [
 				"thunderbolt",
 				"thunderwave",
 				"doubleedge",
+				"substitute"
+			]
+		}
+	],
+	[
+		"magneton",
+		{
+			"moves": [
+				"thunderbolt",
+				"thunderwave",
+				"hyperbeam",
 				"rest"
 			]
 		}
@@ -456,8 +732,19 @@
 			"moves": [
 				"slash",
 				"agility",
-				"swordsdance",
-				"bodyslam"
+				"substitute",
+				"sandattack"
+			]
+		}
+	],
+	[
+		"doduo",
+		{
+			"moves": [
+				"bodyslam",
+				"doubleedge",
+				"drillpeck",
+				"agility"
 			]
 		}
 	],
@@ -473,13 +760,35 @@
 		}
 	],
 	[
+		"seel",
+		{
+			"moves": [
+				"surf",
+				"blizzard",
+				"bodyslam",
+				"bubblebeam"
+			]
+		}
+	],
+	[
 		"dewgong",
 		{
 			"moves": [
 				"blizzard",
-				"surf",
 				"bodyslam",
+				"surf",
 				"rest"
+			]
+		}
+	],
+	[
+		"grimer",
+		{
+			"moves": [
+				"bodyslam",
+				"thunderbolt",
+				"fireblast",
+				"explosion"
 			]
 		}
 	],
@@ -487,9 +796,20 @@
 		"muk",
 		{
 			"moves": [
+				"explosion",
 				"bodyslam",
-				"thunderbolt",
 				"fireblast",
+				"thunderbolt"
+			]
+		}
+	],
+	[
+		"shellder",
+		{
+			"moves": [
+				"clamp",
+				"surf",
+				"blizzard",
 				"explosion"
 			]
 		}
@@ -511,8 +831,8 @@
 			"moves": [
 				"hypnosis",
 				"thunderbolt",
-				"megadrain",
-				"nightshade"
+				"nightshade",
+				"explosion"
 			]
 		}
 	],
@@ -520,10 +840,10 @@
 		"haunter",
 		{
 			"moves": [
+				"hypnosis",
+				"nightshade",
 				"thunderbolt",
-				"explosion",
-				"psychic",
-				"nightshade"
+				"explosion"
 			]
 		}
 	],
@@ -532,9 +852,9 @@
 		{
 			"moves": [
 				"hypnosis",
-				"thunderbolt",
-				"nightshade",
-				"explosion"
+				"explosion",
+				"psychic",
+				"thunderbolt"
 			]
 		}
 	],
@@ -542,10 +862,10 @@
 		"onix",
 		{
 			"moves": [
-				"bind",
-				"toxic",
 				"earthquake",
-				"explosion"
+				"rockslide",
+				"explosion",
+				"rest"
 			]
 		}
 	],
@@ -554,9 +874,9 @@
 		{
 			"moves": [
 				"psychic",
-				"seismictoss",
 				"thunderwave",
-				"rest"
+				"hypnosis",
+				"substitute"
 			]
 		}
 	],
@@ -572,6 +892,17 @@
 		}
 	],
 	[
+		"krabby",
+		{
+			"moves": [
+				"bodyslam",
+				"crabhammer",
+				"blizzard",
+				"substitute"
+			]
+		}
+	],
+	[
 		"kingler",
 		{
 			"moves": [
@@ -583,12 +914,23 @@
 		}
 	],
 	[
+		"voltorb",
+		{
+			"moves": [
+				"thunderbolt",
+				"thunderwave",
+				"takedown",
+				"explosion"
+			]
+		}
+	],
+	[
 		"electrode",
 		{
 			"moves": [
-				"thunderwave",
 				"thunderbolt",
-				"screech",
+				"thunderwave",
+				"flash",
 				"explosion"
 			]
 		}
@@ -616,13 +958,24 @@
 		}
 	],
 	[
-		"marowak",
+		"cubone",
 		{
 			"moves": [
 				"earthquake",
 				"bodyslam",
 				"blizzard",
-				"fireblast"
+				"counter"
+			]
+		}
+	],
+	[
+		"marowak",
+		{
+			"moves": [
+				"earthquake",
+				"fireblast",
+				"blizzard",
+				"counter"
 			]
 		}
 	],
@@ -631,9 +984,9 @@
 		{
 			"moves": [
 				"highjumpkick",
-				"meditate",
-				"bodyslam",
-				"seismictoss"
+				"jumpkick",
+				"rollingkick",
+				"meditate"
 			]
 		}
 	],
@@ -642,9 +995,9 @@
 		{
 			"moves": [
 				"agility",
-				"submission",
 				"bodyslam",
-				"counter"
+				"submission",
+				"seismictoss"
 			]
 		}
 	],
@@ -652,10 +1005,21 @@
 		"lickitung",
 		{
 			"moves": [
-				"swordsdance",
 				"bodyslam",
-				"hyperbeam",
-				"earthquake"
+				"fireblast",
+				"blizzard",
+				"thunderbolt"
+			]
+		}
+	],
+	[
+		"koffing",
+		{
+			"moves": [
+				"sludge",
+				"fireblast",
+				"thunderbolt",
+				"explosion"
 			]
 		}
 	],
@@ -663,10 +1027,21 @@
 		"weezing",
 		{
 			"moves": [
+				"explosion",
 				"fireblast",
 				"thunderbolt",
-				"hyperbeam",
-				"explosion"
+				"hyperbeam"
+			]
+		}
+	],
+	[
+		"rhyhorn",
+		{
+			"moves": [
+				"earthquake",
+				"bodyslam",
+				"fireblast",
+				"substitute"
 			]
 		}
 	],
@@ -698,8 +1073,8 @@
 			"moves": [
 				"sleeppowder",
 				"stunspore",
-				"bind",
-				"bodyslam"
+				"hyperbeam",
+				"swordsdance"
 			]
 		}
 	],
@@ -720,8 +1095,8 @@
 			"moves": [
 				"surf",
 				"blizzard",
-				"agility",
-				"smokescreen"
+				"doubleedge",
+				"agility"
 			]
 		}
 	],
@@ -729,9 +1104,20 @@
 		"seadra",
 		{
 			"moves": [
+				"agility",
 				"surf",
 				"blizzard",
-				"hydropump",
+				"hydropump"
+			]
+		}
+	],
+	[
+		"goldeen",
+		{
+			"moves": [
+				"surf",
+				"blizzard",
+				"doubleedge",
 				"agility"
 			]
 		}
@@ -740,10 +1126,10 @@
 		"seaking",
 		{
 			"moves": [
-				"surf",
 				"agility",
-				"hyperbeam",
-				"blizzard"
+				"surf",
+				"blizzard",
+				"hyperbeam"
 			]
 		}
 	],
@@ -773,10 +1159,10 @@
 		"mrmime",
 		{
 			"moves": [
+				"thunderwave",
 				"psychic",
 				"thunderbolt",
-				"seismictoss",
-				"thunderwave"
+				"seismictoss"
 			]
 		}
 	],
@@ -787,7 +1173,7 @@
 				"swordsdance",
 				"slash",
 				"hyperbeam",
-				"agility"
+				"wingattack"
 			]
 		}
 	],
@@ -806,10 +1192,10 @@
 		"electabuzz",
 		{
 			"moves": [
-				"thunderbolt",
 				"thunderwave",
+				"thunderbolt",
 				"bodyslam",
-				"hyperbeam"
+				"psychic"
 			]
 		}
 	],
@@ -819,7 +1205,7 @@
 			"moves": [
 				"fireblast",
 				"bodyslam",
-				"confuseray",
+				"hyperbeam",
 				"counter"
 			]
 		}
@@ -843,6 +1229,15 @@
 				"hyperbeam",
 				"blizzard",
 				"earthquake"
+			]
+		}
+	],
+	[
+		"magikarp",
+		{
+			"moves": [
+				"splash",
+				"tackle"
 			]
 		}
 	],
@@ -881,8 +1276,8 @@
 		{
 			"moves": [
 				"surf",
-				"blizzard",
 				"bodyslam",
+				"blizzard",
 				"rest"
 			]
 		}
@@ -927,7 +1322,7 @@
 				"surf",
 				"blizzard",
 				"bodyslam",
-				"rest"
+				"hydropump"
 			]
 		}
 	],
@@ -939,6 +1334,17 @@
 				"icebeam",
 				"bodyslam",
 				"rest"
+			]
+		}
+	],
+	[
+		"kabuto",
+		{
+			"moves": [
+				"surf",
+				"blizzard",
+				"slash",
+				"bodyslam"
 			]
 		}
 	],
@@ -1009,11 +1415,22 @@
 		}
 	],
 	[
+		"dratini",
+		{
+			"moves": [
+				"agility",
+				"blizzard",
+				"thunderbolt",
+				"hyperbeam"
+			]
+		}
+	],
+	[
 		"dragonair",
 		{
 			"moves": [
-				"wrap",
 				"thunderwave",
+				"wrap",
 				"blizzard",
 				"thunderbolt"
 			]
@@ -1049,6 +1466,39 @@
 				"earthquake",
 				"bodyslam",
 				"softboiled"
+			]
+		}
+	],
+	[
+		"poliwag",
+		{
+			"moves": [
+				"amnesia",
+				"hypnosis",
+				"surf",
+				"psychic"
+			]
+		}
+	],
+	[
+		"wartortle",
+		{
+			"moves": [
+				"blizzard",
+				"hydropump",
+				"bodyslam",
+				"surf"
+			]
+		}
+	],
+	[
+		"weepinbell",
+		{
+			"moves": [
+				"razorleaf",
+				"sleeppowder",
+				"doubleedge",
+				"stunspore"
 			]
 		}
 	]
