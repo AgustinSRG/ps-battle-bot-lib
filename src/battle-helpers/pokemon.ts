@@ -118,13 +118,14 @@ export function applyTypeChanges(poke: Pokemon, active: BattleActivePokemon) {
  * @param mode The mode to apply the stats
  */
 export function applyKnownStats(poke: Pokemon, active: BattleActivePokemon, mode: "max" | "min" | "avg") {
+    poke.customStats = {};
     ['hp', 'atk', 'def', 'spa', 'spd', 'spe'].forEach(s => {
         if (mode === "max") {
-            poke.stats[s] = poke.rawStats[s] = active.stats[s].max;
+            poke.stats[s] = poke.rawStats[s] = poke.customStats[s] = active.stats[s].max;
         } else if (mode === "min") {
-            poke.stats[s] = poke.rawStats[s] = active.stats[s].min;
+            poke.stats[s] = poke.rawStats[s] = poke.customStats[s] = active.stats[s].min;
         } else {
-            poke.stats[s] = poke.rawStats[s] = Math.round((active.stats[s].max + active.stats[s].min) / 2);
+            poke.stats[s] = poke.rawStats[s] = poke.customStats[s] = Math.round((active.stats[s].max + active.stats[s].min) / 2);
         }
     });
 
@@ -151,13 +152,15 @@ export function applyTransform(battle: Battle, poke: Pokemon, active: BattleActi
 
         poke.gender = active.volatilesData.transformedInfo.details.gender;
 
+        poke.customStats = {};
+
         ['atk', 'def', 'spa', 'spd', 'spe'].forEach(s => {
             if (mode === "max") {
-                poke.stats[s] = poke.rawStats[s] = active.volatilesData.transformedInfo.stats[s].max;
+                poke.stats[s] = poke.rawStats[s] = poke.customStats[s] = active.volatilesData.transformedInfo.stats[s].max;
             } else if (mode === "min") {
-                poke.stats[s] = poke.rawStats[s] = active.volatilesData.transformedInfo.stats[s].min;
+                poke.stats[s] = poke.rawStats[s] = poke.customStats[s] = active.volatilesData.transformedInfo.stats[s].min;
             } else {
-                poke.stats[s] = poke.rawStats[s] = Math.round((active.volatilesData.transformedInfo.stats[s].max + active.volatilesData.transformedInfo.stats[s].min) / 2);
+                poke.stats[s] = poke.rawStats[s] = poke.customStats[s] = Math.round((active.volatilesData.transformedInfo.stats[s].max + active.volatilesData.transformedInfo.stats[s].min) / 2);
             }
         });
     }

@@ -3,7 +3,7 @@
 "use strict";
 
 import { Battle, BattleActivePokemon, BattlePlayer, VolatileStatuses } from "../../../battle-data";
-import { DamageResult, abilityIsEnabled, calcDamage, calcMoveAccuracy, createActiveFromSide, createSidePokemonFromRequest, findSidePokemon, getActivePokemonTurnRecovery } from "../../../battle-helpers";
+import { abilityIsEnabled, calcDamage, calcMoveAccuracy, createActiveFromSide, createSidePokemonFromRequest, findSidePokemon, getActivePokemonTurnRecovery } from "../../../battle-helpers";
 import { applyCommonSetsToFoeActive } from "../../../battle-helpers/pokemon-sets";
 import { clone, compareIds, toId } from "../../../utils";
 import { applyDamageExceptions } from "./evaluate-move-damage";
