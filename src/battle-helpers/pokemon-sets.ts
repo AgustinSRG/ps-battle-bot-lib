@@ -43,7 +43,12 @@ export type PokemonCommonSetRepository = Map<string, PokemonCommonSet>;
 
 const PokemonCommonSetRepositories = new Map<number, PokemonCommonSetRepository>();
 
-function getRepository(gen: number): PokemonCommonSetRepository {
+/**
+ * Gets the common sets repository
+ * @param gen Generation
+ * @returns The repository
+ */
+export function getCommonSetsRepository(gen: number): PokemonCommonSetRepository {
     gen = Math.floor(gen) || LAST_GEN;
 
     if (gen < 1 || gen > 9) {
@@ -70,7 +75,7 @@ function getRepository(gen: number): PokemonCommonSetRepository {
 export async function applyCommonSetsToFoeActive(battle: Battle, active: BattleActivePokemon): Promise<BattleActivePokemon> {
     const gen = battle.status.gen;
 
-    const repository = getRepository(gen);
+    const repository = getCommonSetsRepository(gen);
     let species = active.details.species;
     if (active.volatilesData.fake && active.volatilesData.fakeGuess) {
         species = active.volatilesData.fakeGuess;
