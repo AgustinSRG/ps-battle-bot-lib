@@ -31,39 +31,8 @@ export const MajorEventsAnalyzer: { [eventType in BattleEventMajor["type"]]: (an
         if (battle.status.teamPreview) {
             for (const player of battle.players.values()) {
                 if (!battle.status.teamPreviewSize || player.teamSize <= battle.status.teamPreviewSize) {
-                    // We can know the team from the team preview
-
-                    if (player.team.length === 0) {
-                        for (const tpPoke of player.teamPreview) {
-                            player.team.push({
-                                index: player.team.length,
-                                active: false,
-                                revealed: true,
-                                ident: {
-                                    playerIndex: player.index,
-                                    name: tpPoke.details.species,
-                                },
-                                details: clone(tpPoke.details),
-                                condition: {
-                                    hp: 100,
-                                    maxHP: 100,
-                                    status: "",
-                                    fainted: false,
-                                },
-                                stats: getStatRangeFromDetails(battle.status.gen, tpPoke.details),
-                                item: unknownItem(),
-                                ability: unknownAbility(),
-                                timesHit: 0,
-                                totalBurnedSleepTurns: 0,
-                                sleptByRest: false,
-                                moves: new Map(),
-                            });
-                        }
-                    } else {
-                        // Main player, just mark them as revealed
-                        for (const poke of player.team) {
-                            poke.revealed = true;
-                        }
+                    for (const poke of player.team) {
+                        poke.revealed = true;
                     }
                 }
             }
