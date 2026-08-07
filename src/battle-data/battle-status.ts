@@ -128,7 +128,7 @@ export const Weathers = {
     DesolateLand: toId("DesolateLand"),
     Sandstorm: toId("Sandstorm"),
     Hail: toId("Hail"),
-    Snow: toId("Snow"),
+    Snow: toId("Snow Scape"),
     DeltaStream: toId("DeltaStream"),
 };
 
